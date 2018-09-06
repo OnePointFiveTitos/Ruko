@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="Ruko.AddressView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ruko">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!--viewable-->
+        <CheckBox IsChecked="{Binding IsPrimary}"
+                  Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"/>
+        <TextBlock Grid.Column="1"
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding Address}"/>
+        <!--<TextBlock Grid.Column="1"
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding AddressType}"/>
+        <TextBlock Grid.Column="2" 
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding AddressNumber}"/>
+        <TextBlock Grid.Column="3" 
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding AddressLine}"/>
+        <TextBlock Grid.Column="4"
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding OptionalNumber}"/>
+        <TextBlock Grid.Column="5"
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding StateType}"/>
+        <TextBlock Grid.Column="6"
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding City}"/>
+        <TextBlock Grid.Column="7"
+                   Visibility="{Binding IsEditable, Converter={StaticResource FalseToVisible}}"
+                   Text="{Binding Zip_Code}"/>-->
+        <!--editable-->
+        <ComboBox Grid.Column="1"
+                  Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"
+                  ItemsSource="{Binding AddressTypes}" 
+                  SelectedItem="{Binding AddressType}"/>
+        <TextBox Grid.Column="2"
+                 Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"
+                 Text="{Binding AddressNumber}"/>
+        <TextBox Grid.Column="3" 
+                 Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"
+                 Text="{Binding AddressLine}"/>
+        <TextBox Grid.Column="4" 
+                 Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"
+                 Text="{Binding OptionalNumber}"/>
+        <TextBox Grid.Column="5"
+                   Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"
+                   Text="{Binding City}"/>
+        <ComboBox Grid.Column="6"
+                  Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"
+                  ItemsSource="{Binding StateTypes}" 
+                  SelectedItem="{Binding StateType, FallbackValue='New_York', TargetNullValue='New_York'}"/>
+        <TextBox Grid.Column="7"
+                   Visibility="{Binding IsEditable, Converter={StaticResource TrueToVisible}}"
+                   Text="{Binding Zip_Code}"/>
+
+        <Button Content="Edit" Grid.Column="8" Click="Button_Click"/>
+    </Grid>
+</UserControl>

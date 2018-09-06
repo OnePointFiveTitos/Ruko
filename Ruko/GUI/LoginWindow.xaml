@@ -1,0 +1,51 @@
+﻿<Window x:Class="Ruko.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ruko"
+        Title="Login" 
+        WindowState="Maximized"
+        Background="LightSkyBlue">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="Ruko" 
+                   HorizontalAlignment="Center"
+                   FontSize="100"
+                   FontWeight="ExtraBlack"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Username:"/>
+            <TextBlock Grid.Row="1"
+                       Text="Password:"/>
+            <TextBox Grid.Column="1"
+                     Width="200"
+                     BorderBrush="{x:Null}"
+                     Style="{x:Null}"/>
+            <PasswordBox Grid.Row="1"
+                         Grid.Column="1"
+                         BorderBrush="{x:Null}"/>
+            <Button Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Content="Login"
+                    BorderBrush="{x:Null}"
+                    Click="Button_Click"
+                    FontSize="20"
+                    Padding="5"/>
+        </Grid>
+    </StackPanel>
+</Window>
