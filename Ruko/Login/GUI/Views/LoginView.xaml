@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Login.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:car="clr-namespace:ControlsAndResources;assembly=ControlsAndResources"
+             xmlns:local="clr-namespace:Login">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label
+            HorizontalAlignment="Center"
+            FontSize="60"
+            Content="{Binding DisplayTitle, FallbackValue='No Title', TargetNullValue='No Title'}"/>
+
+        <local:LoginControl
+            x:Name="LoginControl"
+            Grid.Row="1"/>
+    </Grid>
+</UserControl>

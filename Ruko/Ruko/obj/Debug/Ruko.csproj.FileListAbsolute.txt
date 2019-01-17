@@ -1,0 +1,271 @@
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Ruko.exe.config
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Enums.dll
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Login.exe
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Managers.dll
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Utilities.dll
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Enums.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Login.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Login.exe.config
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Managers.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\bin\Debug\Utilities.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Windows\RukoWindow.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\RukoView.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\App.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\App.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Windows\RukoWindow.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\RukoView.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.g.resources
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.csproj.CopyComplete
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\GeneralView.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\GeneralViewMenu.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\RukoViewMenu.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\GeneralView.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\GeneralViewMenu.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\RukoViewMenu.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\CustomersGrid.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\CustomersGrid.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\ContactView.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\CustomerView.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\CustomerTabs.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\Overview.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\ServiceView.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\ContactView.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\CustomerView.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\CustomerTabs.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\Overview.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Views\ServiceView.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\CustomerViewMenu.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Controls\CustomerViewMenu.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Info Controls\Read State\ReadContactControl.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Info Controls\Write State\WriteContactControl.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Info Controls\Read State\ReadContactControl.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\Ruko\obj\Debug\GUI\Info Controls\Write State\WriteContactControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Ruko.exe.config
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Enums.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Login.exe
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Managers.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Utilities.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Enums.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Login.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Login.exe.config
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Managers.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\bin\Debug\Utilities.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\CustomerViewMenu.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\ContactView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\CustomerView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\CustomerTabs.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\CustomersGrid.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\GeneralView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\GeneralViewMenu.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Windows\RukoWindow.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\RukoView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\RukoViewMenu.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\Overview.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\ServiceView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Info Controls\Read State\ReadContactControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Info Controls\Write State\WriteContactControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\App.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\App.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\CustomerViewMenu.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\ContactView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\CustomerView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\CustomerTabs.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\CustomersGrid.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\GeneralView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\GeneralViewMenu.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Windows\RukoWindow.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\RukoView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\RukoViewMenu.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\Overview.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Views\ServiceView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Info Controls\Read State\ReadContactControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Info Controls\Write State\WriteContactControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.g.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.csproj.CopyComplete
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\AddCustomerControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\AddCustomerMenuControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\AddCustomerControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\GUI\Controls\AddCustomerMenuControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\Ruko\obj\Debug\Ruko.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Ruko.exe.config
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Enums.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Login.exe
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Managers.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Utilities.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Enums.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Login.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Login.exe.config
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Managers.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\bin\Debug\Utilities.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Windows\RukoWindow.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\App.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\App.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Windows\RukoWindow.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.g.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.csproj.CopyComplete
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\RukoView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\RukoView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Contact\ContactView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\CustomerView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\General\GeneralView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\SpecificView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Contact\ContactView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\CustomerView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\General\GeneralView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\SpecificView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Account\AccountView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Oil\OilView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Overview\OverviewView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Service\ServiceView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Account\AccountView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Oil\OilView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Overview\OverviewView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\Service\ServiceView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewAccountControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewContactControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewCustomerView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewOilControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewServiceControl.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewAccountControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewContactControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewCustomerView.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewOilControl.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\Ruko\obj\Debug\GUI\Views\Specific\Customer\New Customer\NewServiceControl.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Ruko.exe.config
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Enums.dll
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Login.exe
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Managers.dll
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Utilities.dll
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Enums.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Login.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Login.exe.config
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Managers.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\bin\Debug\Utilities.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\App.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\App.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.g.resources
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.csproj.CopyComplete
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.exe
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Ruko.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\RukoWindow.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\RukoWindow.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\RukoView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\RukoView.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\General\GeneralView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Specific\SpecificView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\General\GeneralView.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Specific\SpecificView.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Customer\CustomerView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\Customer\CustomerView.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\AccountView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\ContactView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\OilView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\ServiceView.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\AccountView.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\ContactView.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\OilView.baml
+C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\ServiceView.baml
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Ruko.exe.config
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Ruko.exe
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Ruko.pdb
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\ControlsAndResources.dll
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Enums.dll
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Login.exe
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Managers.dll
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\MVVM.dll
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Utilities.dll
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\ControlsAndResources.pdb
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Enums.pdb
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Login.pdb
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Login.exe.config
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Managers.pdb
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\MVVM.pdb
+Y:\Github\Ruko\Ruko\Ruko\bin\Debug\Utilities.pdb
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.csprojAssemblyReference.cache
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\AccountView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\ContactView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Customer\CustomerView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\General\GeneralView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\OilView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\RukoView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\RukoWindow.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\ServiceView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Specific\SpecificView.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\App.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko_MarkupCompile.cache
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko_MarkupCompile.lref
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\App.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\AccountView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\ContactView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Customer\CustomerView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\General\GeneralView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\OilView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\RukoView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\RukoWindow.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\ServiceView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Specific\SpecificView.baml
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.g.resources
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.Properties.Resources.resources
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.csproj.GenerateResource.cache
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.csproj.CoreCompileInputs.cache
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.csproj.CopyComplete
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.exe
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\Ruko.pdb

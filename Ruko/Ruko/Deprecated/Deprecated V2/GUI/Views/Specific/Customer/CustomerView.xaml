@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Ruko.CustomerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ruko">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TabControl
+            x:Name="InfoTabs"
+            SelectedIndex="{Binding SelectedInfoTabIndex}"
+            Grid.Row="1">
+
+            <TabItem
+                Header="Overview"
+                FontWeight="{Binding Overview.IsEditing, Converter={StaticResource ModifyingIndicationFontWeight}}">
+                <local:OverviewView/>
+            </TabItem>
+
+            <TabItem
+                Header="Contact"
+                FontWeight="{Binding Contact.IsEditing, Converter={StaticResource ModifyingIndicationFontWeight}}">
+                <local:ContactView/>
+            </TabItem>
+
+            <TabItem
+                Header="Account"
+                FontWeight="{Binding Account.IsEditing, Converter={StaticResource ModifyingIndicationFontWeight}}">
+                <local:AccountView/>
+            </TabItem>
+
+            <TabItem
+                Header="Service"
+                FontWeight="{Binding Service.IsEditing, Converter={StaticResource ModifyingIndicationFontWeight}}">
+                <local:ServiceView/>
+            </TabItem>
+
+            <TabItem
+                Header="Oil"
+                FontWeight="{Binding Oil.IsEditing, Converter={StaticResource ModifyingIndicationFontWeight}}">
+                <local:OilView/>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</UserControl>

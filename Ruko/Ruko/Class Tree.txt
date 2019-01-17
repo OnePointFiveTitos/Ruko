@@ -1,0 +1,211 @@
+ViewModels
+
+Ruko
+	- IsAddingNewCustomer bool
+	- NewCustomer NewCustomer
+	- Add ICommand
+	- Exit ICommand
+	
+	General
+		- Customers ObservableCollection<Customer>
+		- SelectedCustomer Customer
+		- SelectedCustomers IEnumerable<Customer>
+		- EditCustomer ICommand
+		- CloseCustomer ICommand
+		- DeactivateCustomer ICommand
+		- DeleteCustomer ICommand
+		- Open ICommand
+		- OpenAll ICommand
+		
+	Specific
+		- OpenedCustomers ObservableCollection<Customer>
+		- SelectedOpenedCustomer Customer
+		- SelectedOpenedCustomers IEnumerable<Customer>	
+		- Close ICommand
+		- CloseAll ICommand
+		
+	NewCustomer
+		- Customer Customer
+		- Create ICommand
+		- Reset ICommand
+		- Cancel ICommand
+		
+	Customer
+		- Account Account
+		- Contact Contact
+		- Service Service
+		- Oil Oil
+		- Close ICommand
+		- Deactivate ICommand
+		- Delete ICommand
+		- IsOpened bool
+		- IsGeneralSelected bool
+		- IsSpecificSelected bool
+		- IsEditing bool
+		- IsActive bool
+		- SelectedInfoTabIndex
+		- SelectedInfoTab
+		- SelectedInfo
+		- Open()
+		- Close()
+		- Add()
+		- Delete()
+		- ToggleActivation()
+		- ToggleSelection(SelectionTypes type, bool state)
+		- ResetEditingState(bool state)
+		- Save()
+		
+		(enum)SelectionTypes
+			- General
+			- Specific
+			- Both
+			
+		(abs)Info
+			- IsEdited bool
+			- IsEditing bool
+			- Edit(int index, bool saveChanges)
+			- Save()
+			
+			(abs)Item
+			- IsValid bool
+			- IsRequired bool
+			- IsPrimary bool
+			
+		Account : Info
+			- ID string
+			- Status UserParameter
+			- Standing UserParameter
+			- Lead UserParameter
+			
+		Contact : Info
+			- Name Name
+			- Address Address
+			- Email Email
+			- Phone Phone
+			- Names ObservableCollection<Name>
+			- Addresses ObservableCollection<Address>
+			- Emails ObservableCollection<Email>
+			- Phones ObservableCollection<Phone>
+			- ToggleItemPersistence(ContactItemTypes itemType, ContactItemViewModel<ContactItemModel> item, bool isAdded)
+			- SwapPrimaryItem(ContactItemTypes itemType, ContactItemViewModel<ContactItemModel> item)
+			(abs)ContactItem : Item
+				//- ParseFullRegex Regex
+				//- PropertyIndices int[]
+				//- PropertyMapping List<string>
+				- Full string
+				
+			(intf)IContactMethod
+				- IsPreferred bool
+				- Type UserParameter
+				
+			(intf)IAssociated
+				- Name Name
+				
+			Name : ContactItem 
+				- First string
+				- Last string
+				
+			Address : ContactItem, IAssociated
+				- Number int
+				- Street string
+				- City string
+				- State enum
+				- Zipcode int
+				- Extension int
+				- CrossStreet string
+				
+			Email : ContactItem, IContactMethod, IAssociated
+				- Handle string
+				- Domain string
+				- Register string
+				
+			Phone : ContactItem, IContactMethod, IAssociated
+				- Areacode int
+				- Prefix int
+				- Line int
+				- Country int
+				- Extension int
+		(abs)Ticket
+			- IsSelected bool
+			- IsOpened bool
+			- Date DateTime
+			- Name Name
+			- Address Address
+			- TimeOut string
+			- TimeIn string
+			- Technician/Mechanic/Employee
+			- Remark string
+			- SubTotal float
+			- Tax float
+			- Total float
+			- PayementType UserParameter
+			
+		(abs)TicketableInfo : Info
+			- Tickets ObservableCollection<Ticket>
+			- SelectedTicket Ticket
+			- SelectedOpenedTicket Ticket
+			
+		Service : TicketableInfo
+			- Primary : System
+			- Secondary : System
+			- ServiceTickets ObservableCollection<ServiceTicket>
+			
+			ServiceTicket : Ticket
+				- IsAnnualMaintenanceAndSafetyDiagnostic
+				- ServiceType UserParameter
+				- IsScheduled bool
+				- InstallationType UserParameter
+				- CoolingHeatingType UserParameter
+				- PrimarySystem SystemUpdate
+				- SecondarySystem SystemUpdate
+				
+				SystemUpdate
+					- BurnerType string
+					- BurnerMake string
+					- BurnerAge string
+					- OilFlow UserParameter
+					- Transformer UserParameter
+					- Eye UserParameter
+					- Pump UserParameter
+					- Motor UserParameter
+					- Chamber UserParameter
+					- Chimney UserParameter
+					- CO2 string
+					- Smoke string
+					- Temperature string
+					- Efficieny int
+					- Nozzle string | int (NozzleSize?)
+					- Filter UserParameter
+				
+			System : Item
+				- BoilerMake string
+				- PrimaryType UserParameter
+				- SecondaryType UserParameter
+				- BurnerMake string
+				- BurnerSize string
+				- NozzleSize string
+				- FilterSize string
+				- TransformerType UserParameter
+				- CirculatorType UserParameter	
+				
+		Oil : TicketableInfo
+			- Tank string
+			- FillLocation string
+			- DeliveryInstructions string
+			- OilTickets ObservableCollection<OilTicket>
+			
+			OilTicket : Ticket
+				- Gallons float
+				- PricePerGallon float
+				- Discount float
+				- DeleiveryCharge float
+				- WorkType UserParameter
+				- IsTaxable bool
+				- TaxID UserParameter
+				- TaxRate UserParameter
+				- IsTankFill bool
+				- InvoiceNumber int
+				- SendCopy bool
+				- Reference string
+				
+			

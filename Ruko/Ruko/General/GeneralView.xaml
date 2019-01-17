@@ -1,0 +1,155 @@
+﻿<UserControl x:Class="Ruko.GeneralView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ruko"
+             DataContext="{Binding General}"
+             Visibility="{Binding Parent.ShowGeneralCustomerControls, Converter={StaticResource TrueToVisibility}, FallbackValue=Visible, TargetNullValue=Visible}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Menu>
+            <ToggleButton
+                IsChecked="{Binding AreAllSelected}"
+                CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Mode=Self}}"
+                Command="{Binding ToggleSelectionCommand}">
+                <TextBlock>
+                    <Run Text="{Binding AreAllSelected, Converter={StaticResource BoolToAllSelectedButtonText}, FallbackValue=Select, TargetNullValue=Select}"/>
+                    All
+                </TextBlock>
+            </ToggleButton>
+            <MenuItem
+                Visibility="{Binding Parent.ShowDebugOptions, Converter={StaticResource TrueToVisibility}}"
+                Header="Debug">
+                <MenuItem
+                    CommandParameter="1"
+                    Command="{Binding DebugAddCommand}"
+                    Header="Add 1"/>
+                <MenuItem
+                    CommandParameter="10"
+                    Command="{Binding DebugAddCommand}"
+                    Header="Add 10"/>
+                <MenuItem
+                    CommandParameter="100"
+                    Command="{Binding DebugAddCommand}"
+                    Header="Add 100"/>
+                <MenuItem
+                    CommandParameter="1000"
+                    Command="{Binding DebugAddCommand}"
+                    Header="Add 1000"/>
+            </MenuItem>
+            <MenuItem
+                Command="{Binding OpenCommand}"
+                Header="_Open"/>
+            <MenuItem
+                Visibility="{Binding Parent.ShowDebugOptions, Converter={StaticResource TrueToVisibility}}"
+                Command="{Binding OpenAllCommand}"
+                Header="Open A_ll"/>
+            <MenuItem
+                Command="{Binding AddCommand}"
+                Header="_Add"/>
+            <MenuItem
+                Visibility="{Binding Parent.ShowDebugOptions, Converter={StaticResource TrueToVisibility}}"
+                Command="{Binding EditCommand}"
+                Header="_Edit"/>
+            <MenuItem
+                Visibility="{Binding SelectedGeneralCustomer.IsOpened, Converter={StaticResource TrueToVisibility}}"
+                Command="{Binding SelectedGeneralCustomer.CloseCommand}"
+                Header="_Close"/>
+            <MenuItem
+                Visibility="{Binding SelectedGeneralCustomer.IsActive, Converter={StaticResource FalseToVisibility}}"
+                Command="{Binding SelectedGeneralCustomer.DeactivateCommand}"
+                Header="{Binding SelectedGeneralCustomer.IsActive, Converter={StaticResource ActivationStateButtonText}, FallbackValue=De_activate, TargetNullValue=De_activate}"/>
+            <MenuItem
+                Visibility="{Binding Parent.ShowDebugOptions, Converter={StaticResource TrueToVisibility}}"
+                Command="{Binding SelectedGeneralCustomer.DeleteCommand}"
+                Header="_Delete"/>
+        </Menu>
+
+        <DataGrid
+            x:Name="GeneralCustomersGrid"
+            Grid.Row="1"
+            IsReadOnly="True"
+            AutoGenerateColumns="False"
+            VirtualizingPanel.ScrollUnit="Item"
+            VirtualizingPanel.VirtualizationMode="Recycling"
+            VirtualizingPanel.IsVirtualizing="True"
+            SelectedItem="{Binding SelectedGeneralCustomer}"
+            ItemsSource="{Binding GeneralCustomers}">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_MouseDoubleClick"/>
+                    <Setter Property="IsSelected" Value="{Binding IsGeneralSelected}"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn
+                    Header="Status">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel 
+                                Orientation="Horizontal" 
+                                ToolTip="GeneralSelected, Opened, SpecificSelected, Active, Editing">
+                                <StackPanel.Resources>
+                                    <Style TargetType="CheckBox">
+                                        <Setter Property="IsEnabled" Value="False"/>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <CheckBox 
+                                    IsChecked="{Binding IsGeneralSelected}"/>
+                                <CheckBox 
+                                    IsChecked="{Binding IsOpened}"/>
+                                <CheckBox 
+                                    IsChecked="{Binding IsSpecificSelected}"/>
+                                <CheckBox 
+                                    IsChecked="{Binding IsActive}"/>
+                                <CheckBox 
+                                    IsChecked="{Binding IsEditing}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn
+                    Binding="{Binding Account.ID}"
+                    Header="Account #"/>
+
+                <DataGridTextColumn
+                    Binding="{Binding Contact.Name}"
+                    Header="Name"/>
+
+                <DataGridTextColumn
+                    Binding="{Binding Contact.Address}"
+                    Header="Address"/>
+
+                <DataGridTextColumn
+                    Binding="{Binding Contact.Phone}"
+                    Header="Phone"/>
+
+                <DataGridTextColumn
+                    Binding="{Binding Contact.Email}"
+                    Header="Email"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StatusBar
+            Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock>
+                    Total: 
+                    <Run Text="{Binding GeneralCustomersCount}"/>
+                </TextBlock>
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock>
+                    Selected: 
+                    <Run Text="{Binding SelectedGeneralCustomersCount}"/>
+                </TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</UserControl>

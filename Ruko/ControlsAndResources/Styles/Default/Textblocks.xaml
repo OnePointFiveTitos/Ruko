@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ControlsAndResources">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Base.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Style TargetType="TextBlock" x:Key="DefaultTextblocks" BasedOn="{StaticResource BaseDefaultFrameworkElement}">
+        <!--I'm overriding this and setting it to 0 because the Button class uses a textblock to display the content, and the textblock's margin effectively serves as the button's padding-->
+        <Setter Property="Margin" Value="0"/> 
+    </Style>
+</ResourceDictionary>

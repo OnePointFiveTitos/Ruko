@@ -1,0 +1,103 @@
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Converters\Converters.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Labels.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Styles\Default\MenuItems.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Package.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Base.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Buttons.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Textblocks.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Textboxes.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\Themes\Generic.baml
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.g.resources
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Converters\Converters.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Styles\Default\Labels.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Styles\Default\MenuItems.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Styles\Default\Package.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Styles\Default\Base.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Styles\Default\Buttons.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Styles\Default\Textblocks.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Styles\Default\Textboxes.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\Themes\Generic.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources.g.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\ControlsAndResources\obj\Debug\ControlsAndResources.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Converters\Converters.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Styles\Default\Labels.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Styles\Default\MenuItems.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Styles\Default\Package.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Styles\Default\Base.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Styles\Default\Buttons.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Styles\Default\Textblocks.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Styles\Default\Textboxes.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\Themes\Generic.baml
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources.g.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\ControlsAndResources\obj\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\bin\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\bin\Debug\ControlsAndResources.pdb
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.cache
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.lref
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Converters\Converters.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Styles\Default\Labels.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Styles\Default\MenuItems.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Styles\Default\Package.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Styles\Default\Base.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Styles\Default\Buttons.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Styles\Default\Textblocks.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Styles\Default\Textboxes.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\Themes\Generic.baml
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources.g.resources
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources.dll
+C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources.pdb
+Y:\Github\Ruko\Ruko\ControlsAndResources\bin\Debug\ControlsAndResources.dll
+Y:\Github\Ruko\Ruko\ControlsAndResources\bin\Debug\ControlsAndResources.pdb
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.csprojAssemblyReference.cache
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.cache
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.lref
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Converters\Converters.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Labels.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Styles\Default\MenuItems.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Package.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Base.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Buttons.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Textblocks.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Styles\Default\Textboxes.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\Themes\Generic.baml
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.g.resources
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.Properties.Resources.resources
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.GenerateResource.cache
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.csproj.CoreCompileInputs.cache
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.dll
+Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.pdb

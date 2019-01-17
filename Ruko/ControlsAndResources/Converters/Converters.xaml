@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ControlsAndResources">
+    <local:BoolInverterConverter x:Key="BoolInverter"/>
+    <local:TrueToVisibilityConverter x:Key="TrueToVisibility"/>
+    <local:FalseToVisibilityConverter x:Key="FalseToVisibility"/>
+    <local:ModifyingIndicationFontWeightConverter x:Key="ModifyingIndicationFontWeight"/>
+    <!--<local:BoolToModificationButtonTextConverter x:Key="BoolToModificationButtonText"/>-->
+    <local:ActivationStateButtonTextConverter x:Key="ActivationStateButtonText"/>
+    <local:ActivateStateFontStyleConverter x:Key="ActivateStateFontStyle"/>
+    <local:BoolToAllSelectedButtonTextConverter x:Key="BoolToAllSelectedButtonText"/>
+    <local:BoolToShowHideTextConverter x:Key="BoolToShowHideText"/>
+</ResourceDictionary>

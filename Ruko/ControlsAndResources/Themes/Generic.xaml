@@ -1,0 +1,96 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ControlsAndResources">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Package.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="{x:Type local:LabeledTextbox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:LabeledTextbox}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition MinWidth="200"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                TextAlignment="{TemplateBinding LabelTextAlignment}"
+                                Text="{TemplateBinding Label}"/>
+
+                            <TextBox
+                                Grid.Column="1"
+                                VerticalAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                TextAlignment="{TemplateBinding TextboxTextAlignment}"
+                                Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Input, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True, UpdateSourceTrigger=PropertyChanged}"/>
+                            <!--When using custom DPs, you can't use templatebinding, instead you need to do regular binding and specify relative source-->
+                            <!--Also make sure that the DP has the appropriate binding flag type set in the metadata-->
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:DynamicControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:DynamicControl}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter/>
+                        <!--<StackPanel>
+                            <StackPanel.Children>
+                                <ItemsControl ItemsSource="{TemplateBinding ItemsSource}"/>
+                            </StackPanel.Children>
+                        </StackPanel>-->
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:LabeledTextblock}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:LabeledTextblock}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition MinWidth="200"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock
+                                Margin="5"
+                                VerticalAlignment="Center"
+                                TextAlignment="{TemplateBinding LabelTextAlignment}"
+                                Text="{TemplateBinding Label}"/>
+
+                            <TextBlock
+                                Margin="5"
+                                Grid.Column="1"
+                                VerticalAlignment="Center"
+                                TextAlignment="{TemplateBinding TextboxTextAlignment}"
+                                Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Input}"/>
+                            <!--When using custom DPs, you can't use templatebinding, instead you need to do regular binding and specify relative source-->
+                            <!--Also make sure that the DP has the appropriate binding flag type set in the metadata-->
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

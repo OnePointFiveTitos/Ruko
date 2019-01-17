@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Ruko.ReadNameControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:car="clr-namespace:ControlsAndResources;assembly=ControlsAndResources"
+             xmlns:local="clr-namespace:Ruko">
+    <StackPanel>
+
+        <car:LabeledTextblock
+            Label="First: "
+            Input="{Binding First}"/>
+
+        <car:LabeledTextblock
+            Label="Middle: "
+            Input="{Binding Middle}"/>
+        
+        <car:LabeledTextblock
+            Label="Last: "
+            Input="{Binding Last}"/>
+        
+    </StackPanel>
+</UserControl>

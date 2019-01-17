@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Ruko.CustomerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Ruko">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <local:CustomerViewMenu/>
+
+        <TabControl
+            Grid.Row="1"
+            x:Name="CustomerViewTabs"
+            SelectedIndex="{Binding SelectedViewTabIndex}">
+
+            <TabItem
+                Header="Overview">
+                <local:Overview
+                    x:Name="Overview"/>
+            </TabItem>
+
+            <TabItem
+                Header="Contact">
+                <local:ContactView
+                    x:Name="ContactView"
+                    DataContext="{Binding Contact}"/>
+            </TabItem>
+
+            <TabItem
+                Header="Service">
+                <local:ServiceView
+                    x:Name="ServiceView"
+                    DataContext="{Binding Service}"/>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</UserControl>

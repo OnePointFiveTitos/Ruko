@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ControlsAndResources">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Base.xaml"/>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Buttons.xaml"/>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Textblocks.xaml"/>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Textboxes.xaml"/>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Labels.xaml"/>
+        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/MenuItems.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <Style TargetType="Button" BasedOn="{StaticResource DefaultButtons}"/>
+    <Style TargetType="TextBlock" BasedOn="{StaticResource DefaultTextblocks}"/>
+    <Style TargetType="TextBox" BasedOn="{StaticResource DefaultTextboxes}"/>
+    <Style TargetType="MenuItem" BasedOn="{StaticResource DefaultMenuItems}"/>
+</ResourceDictionary>

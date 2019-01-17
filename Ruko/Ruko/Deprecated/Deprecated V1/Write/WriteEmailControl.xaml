@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Ruko.WriteEmailControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:car="clr-namespace:ControlsAndResources;assembly=ControlsAndResources"
+             xmlns:local="clr-namespace:Ruko">
+    <StackPanel>
+
+        <car:LabeledTextbox
+            Label="Handle: "
+            Input="{Binding Handle}"/>
+
+        <car:LabeledTextbox
+            Label="Domain: "
+            Input="{Binding Domain}"/>
+
+        <car:LabeledTextbox
+            Label="Register: "
+            Input="{Binding Register}"/>
+
+    </StackPanel>
+</UserControl>
