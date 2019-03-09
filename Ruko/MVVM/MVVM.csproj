@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9CD8A473-6A0E-4336-AD24-EBB043885825}</ProjectGuid>
+    <ProjectGuid>{F2862AA1-7BA3-4E71-8C01-045C022656F8}</ProjectGuid>
     <OutputType>library</OutputType>
     <RootNamespace>MVVM</RootNamespace>
     <AssemblyName>MVVM</AssemblyName>
@@ -13,7 +13,6 @@
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,14 +48,13 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\NodeControlViewModel.cs" />
-    <Compile Include="Interfaces\INodeControlViewModel.cs" />
-    <Compile Include="Interfaces\INodeViewModel.cs" />
-    <Compile Include="Interfaces\IWindowViewModel.cs" />
-    <Compile Include="Interfaces\IViewModel.cs" />
     <Compile Include="Classes\NodeViewModel.cs" />
-    <Compile Include="Classes\ViewModel.cs" />
-    <Compile Include="Classes\WindowViewModel.cs" />
+    <Compile Include="Classes\ControlViewModel.cs" />
+    <Compile Include="Classes\HybridViewModel.cs" />
+    <Compile Include="Interfaces\ICommander.cs" />
+    <Compile Include="Interfaces\IControl.cs" />
+    <Compile Include="Interfaces\INode.cs" />
+    <Compile Include="Interfaces\IViewModel.cs" />
     <Compile Include="ObservableObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -72,6 +70,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="RelayCommand.cs" />
+    <Compile Include="Classes\ViewModel.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -82,19 +81,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ControlsAndResources\ControlsAndResources.csproj">
-      <Project>{83903b0f-fdef-4c0d-89f5-e7a1019b0242}</Project>
-      <Name>ControlsAndResources</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Enums\Enums.csproj">
-      <Project>{5b873b54-0a8a-40cc-9360-94ce01aa6d3a}</Project>
-      <Name>Enums</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
-      <Project>{38292355-6220-445d-9027-751b14e21401}</Project>
+      <Project>{f4dc5320-ec12-45f7-bde1-999dc3d12baa}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+    <ProjectReference Include="Y:\Prototyping\Extensions\XneExtensions\XneExtensions.csproj">
+      <Project>{89b89cc2-08ac-4539-8a64-ac0721eb39f0}</Project>
+      <Name>XneExtensions</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

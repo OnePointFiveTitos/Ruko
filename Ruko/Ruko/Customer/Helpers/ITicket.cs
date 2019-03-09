@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Ruko
 {
     public interface ITicket

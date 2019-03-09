@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Utilities.Functions;
-using static Utilities.Regexes;
-using Enums;
+﻿using System.Linq;
 using MVVM;
-using Managers;
 using System.Windows.Input;
 using System.Windows.Controls;
 using System.Collections.ObjectModel;
@@ -441,7 +433,7 @@ namespace Ruko
         //    IsEditing = isEditing;
         //}
 
-        public void ToggleSelectState(bool isSelected, SelectionTypes type, ICustomerContainer container)
+        public void ToggleSelectState(bool isSelected, SelectionTypes type, ICustomersContainer container)
         {
             container.SelectedCustomer = isSelected
                 ? this

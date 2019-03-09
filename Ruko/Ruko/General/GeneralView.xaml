@@ -19,7 +19,7 @@
                 CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Mode=Self}}"
                 Command="{Binding ToggleSelectionCommand}">
                 <TextBlock>
-                    <Run Text="{Binding AreAllSelected, Converter={StaticResource BoolToAllSelectedButtonText}, FallbackValue=Select, TargetNullValue=Select}"/>
+                    <Run Text="{Binding AreAllSelected, Converter={StaticResource BoolToStringChoices}, ConverterParameter=Select|Unselect, FallbackValue=Select}"/>
                     All
                 </TextBlock>
             </ToggleButton>

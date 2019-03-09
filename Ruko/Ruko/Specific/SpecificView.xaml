@@ -51,8 +51,8 @@
                             VerticalAlignment="Center"
                             DockPanel.Dock="Left"
                             Text="{Binding Contact.Name, FallbackValue='Debug Name', TargetNullValue='Debug Name'}"
-                            FontWeight="{Binding IsEditing, Converter={StaticResource ModifyingIndicationFontWeight}}"
-                            FontStyle="{Binding IsActive, Converter={StaticResource ActivateStateFontStyle}}"/>
+                            FontWeight="{Binding IsEditing, Converter={StaticResource BoolToFontWeight}}"
+                            FontStyle="{Binding IsActive, Converter={StaticResource BoolToFontStyle}}"/>
                         <Button
                             Margin="5,0"
                             Padding="5,0"

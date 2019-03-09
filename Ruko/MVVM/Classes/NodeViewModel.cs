@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace MVVM
 {
-    public abstract class NodeViewModel<TParentViewModel, TModel> : ViewModel<TModel>, INodeViewModel<TParentViewModel, TModel>, INodeViewModel, IViewModel<TModel>, IViewModel
+    public abstract class NodeViewModel<TParent, TModel> : ViewModel<TModel>, INode<TParent>
+        where TParent : IViewModel
     {
-        public TParentViewModel Parent { get; set; }
-        object INodeViewModel.Parent => Parent;
-        public NodeViewModel(TParentViewModel parent, TModel model) 
-            : base(model)
+        public TParent Parent { get; }
+        object INode.Parent => Parent;
+
+        public NodeViewModel(TParent parent, TModel model) : base(model)
         {
             Parent = parent;
         }

@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Utilities.Functions;
-using static Utilities.Regexes;
-using Enums;
+﻿using System.Linq;
 using MVVM;
-using Managers;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
@@ -15,24 +7,10 @@ using System.Windows;
 
 namespace Ruko
 {
-    public class SpecificViewModel : NodeViewModel<RukoViewModel, SpecificModel>, ICustomerContainer
+    public class SpecificViewModel : NodeViewModel<RukoViewModel, SpecificModel>, ICustomersContainer
     {
         public SpecificView SpecificView => Parent.RukoView.SpecificView;
         public ListBox SpecificCustomersList => SpecificView.SpecificCustomersList;
-
-        //public ObservableCollection<CustomerViewModel> SpecificCustomers { get; } = new ObservableCollection<CustomerViewModel>();
-        //public CustomerViewModel SelectedSpecificCustomer
-        //{
-        //    get => Model.selectedCustomer;
-        //    set
-        //    {
-        //        if (Model.selectedCustomer != value)
-        //        {
-        //            Model.selectedCustomer = value;
-        //            OnPropertyChanged();
-        //        }
-        //    }
-        //}
 
         public ObservableCollection<CustomerViewModel> Customers { get; } = new ObservableCollection<CustomerViewModel>();
         public CustomerViewModel SelectedCustomer
@@ -55,6 +33,7 @@ namespace Ruko
         {
             Initialize();
         }
+
         public void Initialize()
         {
             Customers.CollectionChanged += (sender, e) =>
@@ -62,6 +41,7 @@ namespace Ruko
                 SelectedCustomer = SelectedCustomer ?? Customers.FirstOrDefault();
             };
         }
+
         public override void InitializeCommands()
         {
             base.InitializeCommands();
@@ -86,7 +66,7 @@ namespace Ruko
         internal CustomerViewModel selectedCustomer;
     }
 
-    public interface ICustomerContainer
+    public interface ICustomersContainer
     {
         ObservableCollection<CustomerViewModel> Customers { get; }
         CustomerViewModel SelectedCustomer { get; set; }

@@ -1,75 +1,13 @@
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\MVVM.pdb
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\ControlsAndResources.dll
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\Enums.dll
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\Utilities.dll
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\ControlsAndResources.pdb
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\Enums.pdb
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\bin\Debug\Utilities.pdb
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\obj\Debug\MVVM.Properties.Resources.resources
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\obj\Debug\MVVM.csproj.CopyComplete
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\obj\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Development\Ruko 3\Ruko\MVVM\obj\Debug\MVVM.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\MVVM.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\ControlsAndResources.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\Enums.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\Utilities.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\ControlsAndResources.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\Enums.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\bin\Debug\Utilities.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\obj\Debug\MVVM.Properties.Resources.resources
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\obj\Debug\MVVM.csproj.CopyComplete
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\obj\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\obj\Debug\MVVM.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 4 2019\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\MVVM.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\ControlsAndResources.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\Enums.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\Utilities.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\ControlsAndResources.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\Enums.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\bin\Debug\Utilities.pdb
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\obj\Debug\MVVM.Properties.Resources.resources
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\obj\Debug\MVVM.csproj.CopyComplete
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\obj\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Ruko Jan 8 Pro Redesign\MVVM\obj\Debug\MVVM.pdb
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\MVVM.pdb
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\ControlsAndResources.dll
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\Enums.dll
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\Utilities.dll
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\ControlsAndResources.pdb
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\Enums.pdb
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\bin\Debug\Utilities.pdb
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\obj\Debug\MVVM.Properties.Resources.resources
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\obj\Debug\MVVM.csproj.CopyComplete
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\obj\Debug\MVVM.dll
-C:\Users\Xnenai\Desktop\Ruko Official\MVVM\obj\Debug\MVVM.pdb
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\MVVM.dll
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\MVVM.pdb
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\ControlsAndResources.dll
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\Enums.dll
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\Utilities.dll
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\ControlsAndResources.pdb
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\Enums.pdb
-Y:\Github\Ruko\Ruko\MVVM\bin\Debug\Utilities.pdb
-Y:\Github\Ruko\Ruko\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
-Y:\Github\Ruko\Ruko\MVVM\obj\Debug\MVVM.Properties.Resources.resources
-Y:\Github\Ruko\Ruko\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
-Y:\Github\Ruko\Ruko\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
-Y:\Github\Ruko\Ruko\MVVM\obj\Debug\MVVM.csproj.CopyComplete
-Y:\Github\Ruko\Ruko\MVVM\obj\Debug\MVVM.dll
-Y:\Github\Ruko\Ruko\MVVM\obj\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\Utilities.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\Utilities.pdb
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csproj.CopyComplete
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\XneExtensions.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\XneExtensions.pdb

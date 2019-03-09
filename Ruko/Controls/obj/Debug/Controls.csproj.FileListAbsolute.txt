@@ -1,0 +1,15 @@
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\Controls.dll
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\Controls.pdb
+C:\Users\Xnenai\Desktop\Ruko\Controls\obj\Debug\Controls.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko\Controls\obj\Debug\Controls.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko\Controls\obj\Debug\Controls.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko\Controls\obj\Debug\Controls.dll
+C:\Users\Xnenai\Desktop\Ruko\Controls\obj\Debug\Controls.pdb
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\Resources.dll
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\Utilities.dll
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\Resources.pdb
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\Utilities.pdb
+C:\Users\Xnenai\Desktop\Ruko\Controls\obj\Debug\Controls.csproj.CopyComplete
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\XneExtensions.dll
+C:\Users\Xnenai\Desktop\Ruko\Controls\bin\Debug\XneExtensions.pdb

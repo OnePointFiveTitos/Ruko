@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MVVM
+﻿namespace MVVM
 {
     public interface IViewModel<TModel> : IViewModel
     {
-        new TModel Model { get; set; }
+        new TModel Model { get; }
     }
-    public interface IViewModel
+
+    public interface IViewModel : ICommander
     {
         object Model { get; }
     }

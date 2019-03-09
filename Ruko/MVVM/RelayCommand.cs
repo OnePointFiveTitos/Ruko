@@ -1,94 +1,95 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace MVVM
 {
     public class RelayCommand : ICommand
     {
-        readonly Action action;
-        /// <summary>
-        /// Initializes a new instance of <see cref="DelegateCommand{T}"/>.
-        /// </summary>
-        /// <param name="execute">Delegate to execute when Execute is called on the command.  This can be null to just hook up a CanExecute delegate.</param>
-        /// <remarks><seealso cref="CanExecute"/> will always return true.</remarks>
+        internal readonly Action action;
         public RelayCommand(Action action) => this.action = action;
-
-        ///<summary>
-        ///Defines the method that determines whether the command can execute in its current state.
-        ///</summary>
-        ///<param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
-        ///<returns>
-        ///true if this command can be executed; otherwise, false.
-        ///</returns>
-        public bool CanExecute(object parameter) => true;
-
-        ///<summary>
-        ///Occurs when changes occur that affect whether or not the command should execute.
-        ///</summary>
+        public virtual bool CanExecute(object parameter) => true;
+        public virtual void Execute(object parameter) => action();
         public event EventHandler CanExecuteChanged
         {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
+            add => CommandManager.RequerySuggested += value;
+            remove => CommandManager.RequerySuggested -= value;
         }
-
-        ///<summary>
-        ///Defines the method to be called when the command is invoked.
-        ///</summary>
-        ///<param name="parameter">Data used by the command. If the command does not require data to be passed, this object can be set to <see langword="null" />.</param>
-        public void Execute(object parameter = null) => action();
     }
 
-    public class RelayCommand<T> : ICommand
+    public class RelayCommand<T> : RelayCommand
     {
-        readonly Action<T> actionT = null;
-        readonly Predicate<T> predicate = null;
+        readonly Predicate<T> predicate;
+        readonly Action<T> actionOfT;
 
-        /// <summary>
-        /// Initializes a new instance of <see cref="DelegateCommand{T}"/>.
-        /// </summary>
-        /// <param name="execute">Delegate to execute when Execute is called on the command.  This can be null to just hook up a CanExecute delegate.</param>
-        /// <remarks><seealso cref="CanExecute"/> will always return true.</remarks>
-        public RelayCommand(Action<T> execute) : this(execute, null) { }
-
-        /// <summary>
-        /// Creates a new command.
-        /// </summary>
-        /// <param name="actionT">The execution logic.</param>
-        /// <param name="predicate">The execution status logic.</param>
-        public RelayCommand(Action<T> actionT, Predicate<T> predicate)
+        public RelayCommand(Action action, Predicate<T> predicate = null) : base(action)
         {
-            this.actionT = actionT;
             this.predicate = predicate;
         }
 
-        //public RelayCommand(Action action, Predicate<T> predicate = null)
-        //{
-        //    this.action = action;
-        //    this.predicate = predicate;
-        //}
-
-        ///<summary>
-        ///Defines the method that determines whether the command can execute in its current state.
-        ///</summary>
-        ///<param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
-        ///<returns>
-        ///true if this command can be executed; otherwise, false.
-        ///</returns>
-        public bool CanExecute(object parameter) => predicate == null ? true : predicate((T)parameter);
-
-        ///<summary>
-        ///Occurs when changes occur that affect whether or not the command should execute.
-        ///</summary>
-        public event EventHandler CanExecuteChanged
+        public RelayCommand(Action<T> actionOfT, Predicate<T> predicate = null) : base(null)
         {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
+            this.actionOfT = actionOfT;
         }
 
-        ///<summary>
-        ///Defines the method to be called when the command is invoked.
-        ///</summary>
-        ///<param name="parameter">Data used by the command. If the command does not require data to be passed, this object can be set to <see langword="null" />.</param>
-        public void Execute(object parameter) => actionT((T)parameter);
+        public override bool CanExecute(object parameter) => predicate == null ? true : predicate((T)parameter);
+        public override void Execute(object parameter)
+        {
+            if (action != null)
+            {
+                action();
+            }
+            else
+            {
+                actionOfT((T)parameter);
+            }
+        }
     }
+
+    //public class RelayCommand<T> : ICommand
+    //{
+    //    readonly Action<T> action;
+    //    readonly Action voidAction;
+    //    readonly Predicate<T> predicate;
+
+
+
+    //    public RelayCommand(Action voidAction) : this(voidAction, null) { }
+
+    //    public RelayCommand(Action voidAction, Predicate<T> predicate)
+    //    {
+    //        this.voidAction = voidAction;
+    //        this.predicate = predicate;
+    //    }
+
+    //    public RelayCommand(Action<T> action) : this(action, null) { }
+
+    //    public RelayCommand(Action<T> action, Predicate<T> predicate)
+    //    {
+    //        this.action = action;
+    //        this.predicate = predicate;
+    //    }
+
+    //    public bool CanExecute(object parameter) => predicate == null ? true : predicate((T)parameter);
+    //    public void Execute(object parameter)
+    //    {
+    //        if (action != null)
+    //        {
+    //            action((T)parameter);
+    //        }
+    //        else
+    //        {
+    //            voidAction();
+    //        }
+    //    }
+
+    //    public event EventHandler CanExecuteChanged
+    //    {
+    //        add => CommandManager.RequerySuggested += value;
+    //        remove => CommandManager.RequerySuggested -= value;
+    //    }
+    //}
 }

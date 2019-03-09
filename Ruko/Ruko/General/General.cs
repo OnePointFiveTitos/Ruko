@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Utilities.Functions;
-using static Utilities.Regexes;
-using Enums;
+﻿using System.Linq;
 using MVVM;
-using Managers;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
@@ -15,27 +7,14 @@ using System.Windows;
 
 namespace Ruko
 {
-    public class GeneralViewModel : NodeViewModel<RukoViewModel, GeneralModel>, ICustomerContainer
+    public class GeneralViewModel : NodeViewModel<RukoViewModel, GeneralModel>, ICustomersContainer
     {
         public GeneralView GeneralView => Parent.RukoView.GeneralView;
         public DataGrid GeneralCustomersGrid => GeneralView.GeneralCustomersGrid;
 
-        //public ObservableCollection<CustomerViewModel> GeneralCustomers { get; } = new ObservableCollection<CustomerViewModel>();
-        //public CustomerViewModel SelectedGeneralCustomer
-        //{
-        //    get => Model.selectedCustomer ?? GeneralCustomers.FirstOrDefault();
-        //    set
-        //    {
-        //        if (Model.selectedCustomer != value)
-        //        {
-        //            Model.selectedCustomer = value;
-        //            OnPropertyChanged();
-        //        }
-        //    }
-        //}
-
         public ObservableCollection<CustomerViewModel> SelectedCustomers { get; } = new ObservableCollection<CustomerViewModel>();
         public ObservableCollection<CustomerViewModel> Customers { get; } = new ObservableCollection<CustomerViewModel>();
+
         public CustomerViewModel SelectedCustomer
         {
             get => Model.selectedCustomer;

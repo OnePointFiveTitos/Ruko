@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Utilities.Functions;
-using static Utilities.Regexes;
-using Enums;
-using MVVM;
-using Managers;
+﻿using MVVM;
+using Management;
 using System.Windows.Input;
 using System.Windows.Controls;
 using System.Windows;
@@ -41,7 +33,7 @@ namespace Ruko
         }
 
         #region UI Control References
-        public RukoView RukoView => Window.RukoView;
+        public RukoView RukoView => Control.RukoView;
 
         public GeneralView GeneralView => RukoView.GeneralView;
         public DataGrid GeneralCustomersGrid => GeneralView.GeneralCustomersGrid;
@@ -188,25 +180,21 @@ namespace Ruko
 
         public ICommand ExitCommand { get; private set; }
 
-        public RukoViewModel(RukoWindow window, RukoModel model) : base(window, model, "Ruko")
+        public RukoViewModel(RukoWindow window, RukoModel model) : base(window, model)
         {
             Ruko = this;
             General = new GeneralViewModel(this, new GeneralModel());
             Specific = new SpecificViewModel(this, new SpecificModel());
         }
 
-        public void Initialize()
-        {
-        }
-
         public override void InitializeCommands()
         {
             base.InitializeCommands();
-            ExitCommand = new RelayCommand(() => Window.Close()); //TODO: check opened customer states
+            ExitCommand = new RelayCommand(() => Control.Close()); //TODO: check opened customer states
         }
     }
 
-    public class RukoModel
+    public class RukoModel : ManagerModel
     {
         internal NewCustomerViewModel newCustomer;
         internal bool isAddingNewCustomer = false;

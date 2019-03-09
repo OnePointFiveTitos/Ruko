@@ -24,7 +24,7 @@
                 <CheckBox
                     IsChecked="{Binding ShowVisibilityToggleControls}">
                     <TextBlock>
-                        <Run Text="{Binding ShowVisibilityToggleControls, Converter={StaticResource BoolToShowHideText}}"/>
+                        <Run Text="{Binding ShowVisibilityToggleControls, Converter={StaticResource BoolToStringChoices}, ConverterParameter=Hide|Show}"/>
                         Visibility Controls
                     </TextBlock>
                 </CheckBox>
