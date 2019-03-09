@@ -15,50 +15,60 @@ using System.Windows;
 
 namespace Ruko
 {
-    public class GeneralViewModel : NodeViewModel<RukoViewModel, GeneralModel>
+    public class GeneralViewModel : NodeViewModel<RukoViewModel, GeneralModel>, ICustomerContainer
     {
         public GeneralView GeneralView => Parent.RukoView.GeneralView;
         public DataGrid GeneralCustomersGrid => GeneralView.GeneralCustomersGrid;
 
-        public ObservableCollection<CustomerViewModel> GeneralCustomers { get; } = new ObservableCollection<CustomerViewModel>();
-        public ObservableCollection<CustomerViewModel> SelectedGeneralCustomers { get; } = new ObservableCollection<CustomerViewModel>();
-        //public int GeneralCustomersCount => GeneralCustomers.Count;
-        //public int SelectedGeneralCustomersCount => SelectedGeneralCustomers.Count;
-        private int gcc;
-        public int GeneralCustomersCount
+        //public ObservableCollection<CustomerViewModel> GeneralCustomers { get; } = new ObservableCollection<CustomerViewModel>();
+        //public CustomerViewModel SelectedGeneralCustomer
+        //{
+        //    get => Model.selectedCustomer ?? GeneralCustomers.FirstOrDefault();
+        //    set
+        //    {
+        //        if (Model.selectedCustomer != value)
+        //        {
+        //            Model.selectedCustomer = value;
+        //            OnPropertyChanged();
+        //        }
+        //    }
+        //}
+
+        public ObservableCollection<CustomerViewModel> SelectedCustomers { get; } = new ObservableCollection<CustomerViewModel>();
+        public ObservableCollection<CustomerViewModel> Customers { get; } = new ObservableCollection<CustomerViewModel>();
+        public CustomerViewModel SelectedCustomer
         {
-            get => gcc;
+            get => Model.selectedCustomer;
             set
             {
-                if (gcc != value)
+                if (Model.selectedCustomer != value)
                 {
-                    gcc = value;
+                    Model.selectedCustomer = value;
                     OnPropertyChanged();
                 }
             }
         }
-        private int sgcc;
-        public int SelectedGeneralCustomersCount
+
+        public int CustomerCount
         {
-            get => sgcc;
+            get => Model.customerCount;
             set
             {
-                if (sgcc != value)
+                if (Model.customerCount != value)
                 {
-                    sgcc = value;
+                    Model.customerCount = value;
                     OnPropertyChanged();
                 }
             }
         }
-        //public List<CustomerViewModel> SGC { get; } = new List<CustomerViewModel>();
-        public CustomerViewModel SelectedGeneralCustomer
+        public int SelectedCustomerCount
         {
-            get => Model.selectedGeneralCustomer ?? GeneralCustomers.FirstOrDefault();
+            get => Model.selectedCustomerCount;
             set
             {
-                if (Model.selectedGeneralCustomer != value)
+                if (Model.selectedCustomerCount != value)
                 {
-                    Model.selectedGeneralCustomer = value;
+                    Model.selectedCustomerCount = value;
                     OnPropertyChanged();
                 }
             }
@@ -91,15 +101,15 @@ namespace Ruko
 
         public void Initialize()
         {
-            GeneralCustomers.CollectionChanged += (sender, e) =>
+            Customers.CollectionChanged += (sender, e) =>
             {
                 ReevaluateAreAllSelected();
-                SelectedGeneralCustomer = SelectedGeneralCustomers.FirstOrDefault();
-                GeneralCustomersCount = GeneralCustomers.Count;
+                SelectedCustomer = SelectedCustomers.FirstOrDefault();
+                CustomerCount = Customers.Count;
             };
-            SelectedGeneralCustomers.CollectionChanged += (sender, e) =>
+            SelectedCustomers.CollectionChanged += (sender, e) =>
             {
-                SelectedGeneralCustomersCount = SelectedGeneralCustomers.Count;
+                SelectedCustomerCount = SelectedCustomers.Count;
             };
             DebugAddCommand.Execute("10");
         }
@@ -109,9 +119,10 @@ namespace Ruko
             base.InitializeCommands();
             ToggleSelectionCommand = new RelayCommand<bool>((isChecked) =>
             {
-                foreach (CustomerViewModel customer in GeneralCustomers)
+                foreach (CustomerViewModel customer in Customers)
                 {
-                    customer.ToggleSelectionState(isChecked, SelectionTypes.General);
+                    customer.ToggleSelectState(isChecked, SelectionTypes.General, this);
+                    //customer.ToggleSelectionState(isChecked, SelectionTypes.General);
                 }
             });
             DebugAddCommand = new RelayCommand<string>((count) =>
@@ -121,19 +132,21 @@ namespace Ruko
                     AddCommand.Execute(null);
                 }
             });
-            AddCommand = new RelayCommand(() => GeneralCustomers.Add(new CustomerViewModel(Parent)));
+            AddCommand = new RelayCommand(() => Customers.Add(new CustomerViewModel(Parent)));
             OpenCommand = new RelayCommand(() =>
             {
-                if (SelectedGeneralCustomers.Count > 1)
+                if (SelectedCustomers.Count > 1)
                 {
                     if (MessageBox.Show("Open all selected customer profiles?", "Confirm", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
                     {
-                        SelectedGeneralCustomers.ToList().ForEach(customer => customer.ToggleProfileState(true, true));
+                        //SelectedCustomers.ToList().ForEach(customer => customer.ToggleProfileState(true, true));
+                        SelectedCustomers.ToList().ForEach(customer => customer.Open(true));
                     }
                 }
                 else
                 {
-                    SelectedGeneralCustomers.FirstOrDefault()?.ToggleProfileState(true, true);
+                    //SelectedCustomers.FirstOrDefault()?.ToggleProfileState(true, true);
+                    SelectedCustomers.FirstOrDefault()?.Open(true);
                 }
             });
             OpenAllCommand = new RelayCommand(() =>
@@ -142,20 +155,23 @@ namespace Ruko
                 {
                     foreach (CustomerViewModel customer in GeneralCustomersGrid.Items.OfType<CustomerViewModel>())
                     {
-                        customer.ToggleProfileState(true, true);
+                        //customer.ToggleProfileState(true, true);
+                        customer.Open(true);
                     }
                 }
             });
         }
         public void ReevaluateAreAllSelected()
         {
-            AreAllSelected = SelectedGeneralCustomers.Count() == GeneralCustomersGrid.Items.Count;
+            AreAllSelected = SelectedCustomers.Count() == GeneralCustomersGrid.Items.Count;
         }
     }
 
     public class GeneralModel
     {
-        internal CustomerViewModel selectedGeneralCustomer;
+        internal CustomerViewModel selectedCustomer;
         internal bool areAllSelected = false;
+        internal int customerCount;
+        internal int selectedCustomerCount;
     }
 }

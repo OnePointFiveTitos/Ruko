@@ -56,10 +56,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AccountView.xaml.cs">
+    <Compile Include="Customer\Account\AccountView.xaml.cs">
       <DependentUpon>AccountView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContactView.xaml.cs">
+    <Compile Include="Customer\Contact\ContactView.xaml.cs">
       <DependentUpon>ContactView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Customer\CustomerView.xaml.cs">
@@ -86,7 +86,7 @@
     <Compile Include="Customer\Oil\Oil.cs" />
     <Compile Include="Customer\Oil\OilTicket.cs" />
     <Compile Include="Customer\Contact\Phone\Phone.cs" />
-    <Compile Include="OilView.xaml.cs">
+    <Compile Include="Customer\Oil\OilView.xaml.cs">
       <DependentUpon>OilView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Ruko.cs" />
@@ -98,7 +98,7 @@
     <Compile Include="RukoWindow.xaml.cs">
       <DependentUpon>RukoWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ServiceView.xaml.cs">
+    <Compile Include="Customer\Service\ServiceView.xaml.cs">
       <DependentUpon>ServiceView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Specific\SpecificView.xaml.cs">
@@ -180,11 +180,11 @@
     <Resource Include="GUI Tree.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="AccountView.xaml">
+    <Page Include="Customer\Account\AccountView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ContactView.xaml">
+    <Page Include="Customer\Contact\ContactView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -196,7 +196,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="OilView.xaml">
+    <Page Include="Customer\Oil\OilView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -208,7 +208,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ServiceView.xaml">
+    <Page Include="Customer\Service\ServiceView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

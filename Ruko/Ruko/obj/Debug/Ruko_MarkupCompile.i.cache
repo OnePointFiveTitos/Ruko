@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Xnenai\Desktop\Ruko Official\Ruko\obj\Debug\
+Y:\Github\Ruko\Ruko\Ruko\obj\Debug\
 Ruko
 none
 false
 DEBUG;TRACE
-C:\Users\Xnenai\Desktop\Ruko Official\Ruko\App.xaml
-91290603742
+Y:\Github\Ruko\Ruko\Ruko\App.xaml
+9-982307509
 
-4419258503
-191087914594
-AccountView.xaml;ContactView.xaml;Customer\CustomerView.xaml;General\GeneralView.xaml;OilView.xaml;RukoView.xaml;RukoWindow.xaml;ServiceView.xaml;Specific\SpecificView.xaml;
+441982178253
+19-1563897138
+Customer\Account\AccountView.xaml;Customer\Contact\ContactView.xaml;Customer\CustomerView.xaml;General\GeneralView.xaml;Customer\Oil\OilView.xaml;RukoView.xaml;RukoWindow.xaml;Customer\Service\ServiceView.xaml;Specific\SpecificView.xaml;
 
 True
 

@@ -29,8 +29,8 @@
 
         <ListBox
             x:Name="SpecificCustomersList" 
-            ItemsSource="{Binding SpecificCustomers}"
-            SelectedItem="{Binding SelectedSpecificCustomer}"
+            ItemsSource="{Binding Customers}"
+            SelectedItem="{Binding SelectedCustomer}"
             VirtualizingPanel.IsVirtualizing="True"
             VirtualizingPanel.ScrollUnit="Item"
             VirtualizingPanel.VirtualizationMode="Recycling"

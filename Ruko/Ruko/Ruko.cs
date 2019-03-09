@@ -27,7 +27,15 @@ namespace Ruko
                 bool isAdded = i == 0;
                 foreach (CustomerViewModel customer in isAdded ? e.AddedItems : e.RemovedItems)
                 {
-                    customer.ToggleSelectionState(isAdded, type);
+                    //customer.ToggleSelectionState(isAdded, type);
+                    if (type == SelectionTypes.General)
+                    {
+                        customer.ToggleSelectState(isAdded, type, GeneralViewModel);
+                    }
+                    else
+                    {
+                        customer.ToggleSelectState(isAdded, type, SpecificViewModel);
+                    }
                 }
             }
         }
@@ -149,8 +157,10 @@ namespace Ruko
                 }
             }
         }
+
         public GridLength GeneralColumnWidth => ShowSpecificCustomerControls ? GridLength.Auto : new GridLength(1, GridUnitType.Star);
         public GridLength SpecificColumnWidth => ShowSpecificCustomerControls ? new GridLength(1, GridUnitType.Star) : GridLength.Auto;
+
         public GeneralViewModel General
         {
             get => Model.general;

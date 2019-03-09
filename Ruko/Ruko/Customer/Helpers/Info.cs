@@ -27,58 +27,58 @@ namespace Ruko
                 }
             }
         }
-        public bool IsEditing
-        {
-            get => Model.isEditing;
-            set
-            {
-                if (Model.isEditing != value)
-                {
-                    Model.isEditing = value;
-                    OnPropertyChanged();
-                    Parent.ReevaluateEditingState();
-                }
-            }
-        }
-        public bool IsEdited
-        {
-            get => Model.isEdited;
-            set
-            {
-                if (Model.isEdited != value)
-                {
-                    Model.isEdited = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
+        //public bool IsEditing
+        //{
+        //    get => Model.isEditing;
+        //    set
+        //    {
+        //        if (Model.isEditing != value)
+        //        {
+        //            Model.isEditing = value;
+        //            OnPropertyChanged();
+        //            Parent.ReevaluateEditingState();
+        //        }
+        //    }
+        //}
+        //public bool IsEdited
+        //{
+        //    get => Model.isEdited;
+        //    set
+        //    {
+        //        if (Model.isEdited != value)
+        //        {
+        //            Model.isEdited = value;
+        //            OnPropertyChanged();
+        //        }
+        //    }
+        //}
 
         public InfoViewModel(CustomerViewModel parent, TModel model, string infoName) : base(parent, model)
         {
-            InfoName = infoName;
+            InfoName = $"{infoName} info";
         }
 
-        public virtual void ToggleEditingState() => IsEditing = !IsEditing;
+        //public virtual void ToggleEditingState() => IsEditing = !IsEditing;
 
-        public virtual void ToggleEditingState(bool saveChanges)
-        {
-            ToggleEditingState();
-            if (!IsEditing && saveChanges)
-            {
-                //TODO: implement saving functionality
-            }
-        }
+        //public virtual void ToggleEditingState(bool saveChanges)
+        //{
+        //    ToggleEditingState();
+        //    if (!IsEditing && saveChanges)
+        //    {
+        //        Save();
+        //    }
+        //}
 
-        public virtual void Save()
-        {
-
-        }
+        //public virtual void Save()
+        //{
+        //    //TODO: implement saving functionality
+        //}
     }
 
     public abstract class InfoModel
     {
         internal string infoName;
-        internal bool isEditing = false;
-        internal bool isEdited = false;
+        //internal bool isEditing = false;
+        //internal bool isEdited = false;
     }
 }

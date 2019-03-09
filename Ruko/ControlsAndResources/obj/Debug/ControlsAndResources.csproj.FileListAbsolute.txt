@@ -82,7 +82,6 @@ C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAnd
 C:\Users\Xnenai\Desktop\Ruko Official\ControlsAndResources\obj\Debug\ControlsAndResources.pdb
 Y:\Github\Ruko\Ruko\ControlsAndResources\bin\Debug\ControlsAndResources.dll
 Y:\Github\Ruko\Ruko\ControlsAndResources\bin\Debug\ControlsAndResources.pdb
-Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources.csprojAssemblyReference.cache
 Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\GeneratedInternalTypeHelper.g.cs
 Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.cache
 Y:\Github\Ruko\Ruko\ControlsAndResources\obj\Debug\ControlsAndResources_MarkupCompile.lref

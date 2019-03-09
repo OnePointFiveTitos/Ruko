@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Ruko"
-             DataContext="{Binding SelectedSpecificCustomer}">
+             DataContext="{Binding SelectedCustomer}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -29,8 +29,13 @@
                 Command="{Binding CloseCommand}"
                 Header="_Close"/>
             <MenuItem
+                Visibility="{Binding IsActive, Converter={StaticResource FalseToVisibility}, FallbackValue=Collapsed, TargetNullValue=Collapsed}"
+                Command="{Binding ActivateCommand}"
+                Header="_Activate"/>
+            <MenuItem
+                Visibility="{Binding IsActive, Converter={StaticResource TrueToVisibility}}"
                 Command="{Binding DeactivateCommand}"
-                Header="{Binding IsActive, Converter={StaticResource ActivationStateButtonText}, FallbackValue=De_activate, TargetNullValue=De_activate}"/>
+                Header="De_activate"/>
             <MenuItem
                 Command="{Binding DeleteCommand}"
                 Header="_Delete"/>

@@ -15,20 +15,34 @@ using System.Windows;
 
 namespace Ruko
 {
-    public class SpecificViewModel : NodeViewModel<RukoViewModel, SpecificModel>
+    public class SpecificViewModel : NodeViewModel<RukoViewModel, SpecificModel>, ICustomerContainer
     {
         public SpecificView SpecificView => Parent.RukoView.SpecificView;
         public ListBox SpecificCustomersList => SpecificView.SpecificCustomersList;
 
-        public ObservableCollection<CustomerViewModel> SpecificCustomers { get; } = new ObservableCollection<CustomerViewModel>();
-        public CustomerViewModel SelectedSpecificCustomer
+        //public ObservableCollection<CustomerViewModel> SpecificCustomers { get; } = new ObservableCollection<CustomerViewModel>();
+        //public CustomerViewModel SelectedSpecificCustomer
+        //{
+        //    get => Model.selectedCustomer;
+        //    set
+        //    {
+        //        if (Model.selectedCustomer != value)
+        //        {
+        //            Model.selectedCustomer = value;
+        //            OnPropertyChanged();
+        //        }
+        //    }
+        //}
+
+        public ObservableCollection<CustomerViewModel> Customers { get; } = new ObservableCollection<CustomerViewModel>();
+        public CustomerViewModel SelectedCustomer
         {
-            get => Model.selectedSpecificCustomer;
+            get => Model.selectedCustomer;
             set
             {
-                if (Model.selectedSpecificCustomer != value)
+                if (Model.selectedCustomer != value)
                 {
-                    Model.selectedSpecificCustomer = value;
+                    Model.selectedCustomer = value;
                     OnPropertyChanged();
                 }
             }
@@ -43,22 +57,24 @@ namespace Ruko
         }
         public void Initialize()
         {
-            SpecificCustomers.CollectionChanged += (sender, e) =>
+            Customers.CollectionChanged += (sender, e) =>
             {
-                SelectedSpecificCustomer = SelectedSpecificCustomer ?? SpecificCustomers.FirstOrDefault();
+                SelectedCustomer = SelectedCustomer ?? Customers.FirstOrDefault();
             };
         }
         public override void InitializeCommands()
         {
             base.InitializeCommands();
-            CloseCommand = new RelayCommand(() => SelectedSpecificCustomer?.ToggleProfileState(false));
+            //CloseCommand = new RelayCommand(() => SelectedCustomer?.ToggleProfileState(false));
+            CloseCommand = new RelayCommand(() => SelectedCustomer?.Close());
             CloseAllCommand = new RelayCommand(() =>
             {
                 if (SpecificCustomersList.Items.Count > 0)
                 {
                     if (MessageBox.Show("Close all customer profiles?", "Confirm", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
                     {
-                        SpecificCustomersList.Items.OfType<CustomerViewModel>().ToList().ForEach(customer => customer.ToggleProfileState(false));
+                        //SpecificCustomersList.Items.OfType<CustomerViewModel>().ToList().ForEach(customer => customer.ToggleProfileState(false));
+                        SpecificCustomersList.Items.OfType<CustomerViewModel>().ToList().ForEach(customer => customer.Close());
                     }
                 }
             });
@@ -67,6 +83,12 @@ namespace Ruko
 
     public class SpecificModel
     {
-        internal CustomerViewModel selectedSpecificCustomer;
+        internal CustomerViewModel selectedCustomer;
+    }
+
+    public interface ICustomerContainer
+    {
+        ObservableCollection<CustomerViewModel> Customers { get; }
+        CustomerViewModel SelectedCustomer { get; set; }
     }
 }

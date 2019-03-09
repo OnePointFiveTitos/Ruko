@@ -58,16 +58,20 @@
                 Command="{Binding EditCommand}"
                 Header="_Edit"/>
             <MenuItem
-                Visibility="{Binding SelectedGeneralCustomer.IsOpened, Converter={StaticResource TrueToVisibility}}"
-                Command="{Binding SelectedGeneralCustomer.CloseCommand}"
+                Visibility="{Binding SelectedCustomer.IsOpened, Converter={StaticResource TrueToVisibility}}"
+                Command="{Binding SelectedCustomer.CloseCommand}"
                 Header="_Close"/>
             <MenuItem
-                Visibility="{Binding SelectedGeneralCustomer.IsActive, Converter={StaticResource FalseToVisibility}}"
-                Command="{Binding SelectedGeneralCustomer.DeactivateCommand}"
-                Header="{Binding SelectedGeneralCustomer.IsActive, Converter={StaticResource ActivationStateButtonText}, FallbackValue=De_activate, TargetNullValue=De_activate}"/>
+                Visibility="{Binding SelectedCustomer.IsActive, Converter={StaticResource FalseToVisibility}, FallbackValue=Collapsed, TargetNullValue=Collapsed}"
+                Command="{Binding SelectedCustomer.ActivateCommand}"
+                Header="_Activate"/>
+            <MenuItem
+                Visibility="{Binding SelectedCustomer.IsActive, Converter={StaticResource TrueToVisibility}}"
+                Command="{Binding SelectedCustomer.DeactivateCommand}"
+                Header="De_activate"/>
             <MenuItem
                 Visibility="{Binding Parent.ShowDebugOptions, Converter={StaticResource TrueToVisibility}}"
-                Command="{Binding SelectedGeneralCustomer.DeleteCommand}"
+                Command="{Binding SelectedCustomer.DeleteCommand}"
                 Header="_Delete"/>
         </Menu>
 
@@ -79,8 +83,8 @@
             VirtualizingPanel.ScrollUnit="Item"
             VirtualizingPanel.VirtualizationMode="Recycling"
             VirtualizingPanel.IsVirtualizing="True"
-            SelectedItem="{Binding SelectedGeneralCustomer}"
-            ItemsSource="{Binding GeneralCustomers}">
+            SelectedItem="{Binding SelectedCustomer}"
+            ItemsSource="{Binding Customers}">
             <DataGrid.Resources>
                 <Style TargetType="DataGridRow">
                     <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_MouseDoubleClick"/>
@@ -141,13 +145,13 @@
             <StatusBarItem>
                 <TextBlock>
                     Total: 
-                    <Run Text="{Binding GeneralCustomersCount}"/>
+                    <Run Text="{Binding CustomerCount}"/>
                 </TextBlock>
             </StatusBarItem>
             <StatusBarItem>
                 <TextBlock>
                     Selected: 
-                    <Run Text="{Binding SelectedGeneralCustomersCount}"/>
+                    <Run Text="{Binding SelectedCustomerCount}"/>
                 </TextBlock>
             </StatusBarItem>
         </StatusBar>
