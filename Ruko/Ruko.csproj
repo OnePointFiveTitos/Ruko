@@ -94,5 +94,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xne-Controls\Xne-Controls.csproj">
+      <Project>{dda60967-1cba-4447-b47c-ab8bb424afea}</Project>
+      <Name>Xne-Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xne-Resources\Xne-Resources.csproj">
+      <Project>{6a61b091-96e4-4bc2-b56c-7366e37edc63}</Project>
+      <Name>Xne-Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xne-Utilities\Xne-Utilities.csproj">
+      <Project>{2e85e688-6a95-4c0a-a95c-ff00efcd3b6d}</Project>
+      <Name>Xne-Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

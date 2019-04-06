@@ -1,0 +1,16 @@
+Y:\Github\Ruko\Xne-Resources\bin\Debug\Xne-Resources.dll
+Y:\Github\Ruko\Xne-Resources\bin\Debug\Xne-Resources.pdb
+Y:\Github\Ruko\Xne-Resources\bin\Debug\Xne-Utilities.dll
+Y:\Github\Ruko\Xne-Resources\bin\Debug\Xne-Utilities.pdb
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources.csprojAssemblyReference.cache
+Y:\Github\Ruko\Xne-Resources\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources_MarkupCompile.cache
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources_MarkupCompile.lref
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Converters\Converters.baml
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources.g.resources
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne_Resources.Properties.Resources.resources
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources.csproj.GenerateResource.cache
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources.csproj.CoreCompileInputs.cache
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources.csproj.CopyComplete
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources.dll
+Y:\Github\Ruko\Xne-Resources\obj\Debug\Xne-Resources.pdb
