@@ -1,0 +1,13 @@
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.Properties.Resources.resources
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.pdb
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\Utilities.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\Utilities.pdb
+C:\Users\Xnenai\Desktop\Ruko\MVVM\obj\Debug\MVVM.csproj.CopyComplete
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\XneExtensions.dll
+C:\Users\Xnenai\Desktop\Ruko\MVVM\bin\Debug\XneExtensions.pdb

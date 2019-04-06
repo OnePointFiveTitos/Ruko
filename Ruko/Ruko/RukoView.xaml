@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="Ruko.RukoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ruko">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Menu
+            Grid.ColumnSpan="3">
+            <MenuItem
+                Header="_File"/>
+            <MenuItem
+                Header="_Edit"/>
+            <MenuItem
+                Header="_Tools"/>
+            <MenuItem
+                Header="_Options">
+                <CheckBox
+                    IsChecked="{Binding ShowVisibilityToggleControls}">
+                    <TextBlock>
+                        <Run Text="{Binding ShowVisibilityToggleControls, Converter={StaticResource BoolToStringChoices}, ConverterParameter=Hide|Show}"/>
+                        Visibility Controls
+                    </TextBlock>
+                </CheckBox>
+            </MenuItem>
+            <MenuItem
+                Header="_Help"/>
+            <MenuItem
+                Command="{Binding ExitCommand}"
+                Header="E_xit"/>
+        </Menu>
+
+        <ToolBar
+            Visibility="{Binding ShowVisibilityToggleControls, Converter={StaticResource TrueToVisibility}}"
+            Grid.Row="1">
+            <ToggleButton
+                ToolTip="Toggles the visibility for a few debug options that liekly won't be added to the software."
+                Content="Debug"
+                IsChecked="{Binding ShowDebugOptions}"/>
+            <ToggleButton
+                ToolTip="Toggles the visibility for the left side of the screen that contains all of the customers."
+                Content="General"
+                IsChecked="{Binding ShowGeneralCustomerControls}"/>
+            <ToggleButton
+                ToolTip="Toggles the visibility for the right side of the screen that contains all of the opened customer profiles."
+                Content="Specific"
+                IsChecked="{Binding ShowSpecificCustomerControls}"/>
+            <ToggleButton
+                ToolTip="Toggles the visibility for the list that contains all of the opened customer profiles."
+                Content="Opened"
+                IsChecked="{Binding ShowSpecificCustomersList}"/>
+            <ToggleButton
+                ToolTip="Toggles between everything being visiblie and only the selected customer user interface being visible."
+                Content="View"
+                IsChecked="{Binding ShowFullCustomerControls}"/>
+            <Separator/>
+            <ToggleButton
+                ToolTip="Hides this toolbar - You can reenable/show the toolbar by going to Options."
+                IsChecked="{Binding ShowVisibilityToggleControls}"
+                Content="Hide Visibility Controls"/>
+        </ToolBar>
+        
+        <Grid
+            Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{Binding GeneralColumnWidth}"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="{Binding SpecificColumnWidth}"/>
+            </Grid.ColumnDefinitions>
+            
+            <local:GeneralView
+                x:Name="GeneralView"/>
+
+            <GridSplitter
+                x:Name="Splitter"
+                Width="3"
+                IsEnabled="False"
+                Background="#eee"
+                HorizontalAlignment="Stretch"
+                Grid.Column="1"/>
+
+            <local:SpecificView
+                x:Name="SpecificView"
+                Grid.Column="2"/>
+        </Grid>
+    </Grid>
+</UserControl>

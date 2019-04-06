@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2F7CA6F-7536-46D6-A332-144F1F45EB7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ruko</RootNamespace>
+    <AssemblyName>Ruko</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customer\Account\AccountView.xaml.cs">
+      <DependentUpon>AccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Contact\ContactView.xaml.cs">
+      <DependentUpon>ContactView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerView.xaml.cs">
+      <DependentUpon>CustomerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Oil\OilView.xaml.cs">
+      <DependentUpon>OilView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Service\ServiceView.xaml.cs">
+      <DependentUpon>ServiceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ContactItemTypes.cs" />
+    <Compile Include="Enums\ContactTypes.cs" />
+    <Compile Include="Enums\SelectionTypes.cs" />
+    <Compile Include="Enums\StateCodes.cs" />
+    <Compile Include="Enums\StateTypes.cs" />
+    <Compile Include="General\GeneralView.xaml.cs">
+      <DependentUpon>GeneralView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ruko.cs" />
+    <Compile Include="RukoView.xaml.cs">
+      <DependentUpon>RukoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RukoWindow.xaml.cs">
+      <DependentUpon>RukoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Specific\Specific.cs" />
+    <Compile Include="Specific\SpecificView.xaml.cs">
+      <DependentUpon>SpecificView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer\Account\Account.cs" />
+    <Compile Include="Customer\Contact\Address\Address.cs" />
+    <Compile Include="Customer\Contact\Contact.cs" />
+    <Compile Include="Customer\Contact\ContactItem.cs" />
+    <Compile Include="Customer\Contact\Email\Email.cs" />
+    <Compile Include="Customer\Contact\Name\Name.cs" />
+    <Compile Include="Customer\Contact\Phone\Phone.cs" />
+    <Compile Include="Customer\Customer.cs" />
+    <Compile Include="Customer\Helpers\IAssociated.cs" />
+    <Compile Include="Customer\Helpers\IContactMethod.cs" />
+    <Compile Include="Customer\Helpers\IInfo.cs" />
+    <Compile Include="Customer\Helpers\Info.cs" />
+    <Compile Include="Customer\Helpers\Item.cs" />
+    <Compile Include="Customer\Helpers\ITicket.cs" />
+    <Compile Include="Customer\Helpers\Ticket.cs" />
+    <Compile Include="Customer\Helpers\TicketableInfo.cs" />
+    <Compile Include="Customer\New Customer\NewCustomer.cs" />
+    <Compile Include="Customer\Oil\Oil.cs" />
+    <Compile Include="Customer\Oil\OilTicket.cs" />
+    <Compile Include="Customer\Service\Service.cs" />
+    <Compile Include="Customer\Service\ServiceTicket.cs" />
+    <Compile Include="Customer\Service\System.cs" />
+    <Compile Include="Customer\Service\SystemUpdate.cs" />
+    <Compile Include="General\General.cs" />
+    <Compile Include="Helpers\UserParameter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{dba46cef-d99b-45ac-b66f-cfef101e6086}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Management\Management.csproj">
+      <Project>{11dadfe3-2079-4497-b523-f95e87da54dc}</Project>
+      <Name>Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVVM\MVVM.csproj">
+      <Project>{f2862aa1-7ba3-4e71-8c01-045c022656f8}</Project>
+      <Name>MVVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{9fab706f-455c-4dd3-8458-11a57e898afd}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{f4dc5320-ec12-45f7-bde1-999dc3d12baa}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="Y:\Prototyping\Extensions\XneExtensions\XneExtensions.csproj">
+      <Project>{89b89cc2-08ac-4539-8a64-ac0721eb39f0}</Project>
+      <Name>XneExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Customer\Account\AccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Customer\Contact\ContactView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Customer\CustomerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Customer\Oil\OilView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Customer\Service\ServiceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="General\GeneralView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="RukoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="RukoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Specific\SpecificView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Alt\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
