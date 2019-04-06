@@ -1,5 +1,0 @@
-C:\Users\Xnenai\Desktop\Ruko\Utilities\bin\Debug\Utilities.dll
-C:\Users\Xnenai\Desktop\Ruko\Utilities\bin\Debug\Utilities.pdb
-C:\Users\Xnenai\Desktop\Ruko\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
-C:\Users\Xnenai\Desktop\Ruko\Utilities\obj\Debug\Utilities.dll
-C:\Users\Xnenai\Desktop\Ruko\Utilities\obj\Debug\Utilities.pdb

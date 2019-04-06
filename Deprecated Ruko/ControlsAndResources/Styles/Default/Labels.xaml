@@ -1,8 +1,0 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:ControlsAndResources">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Base.xaml"/>
-    </ResourceDictionary.MergedDictionaries>
-    <Style TargetType="Label" x:Key="DefaultLabels" BasedOn="{StaticResource BaseDefaultControl}"/>
-</ResourceDictionary>

@@ -1,9 +1,0 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:ControlsAndResources">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/ControlsAndResources;component/Styles/Default/Base.xaml"/>
-    </ResourceDictionary.MergedDictionaries>
-    <Style TargetType="TextBox" x:Key="DefaultTextboxes" BasedOn="{StaticResource BaseDefaultControl}"/>
-    <Style TargetType="PasswordBox" x:Key="DefaultPasswordBoxes" BasedOn="{StaticResource BaseDefaultControl}"/>
-</ResourceDictionary>
