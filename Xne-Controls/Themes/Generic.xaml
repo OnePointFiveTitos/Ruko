@@ -76,7 +76,7 @@
                                 HorizontalAlignment="{TemplateBinding LabelHorizontalAlignment}"
                                 Content="{TemplateBinding Label}"
                                 Margin="{TemplateBinding InnerSpacing}"/>
-                            
+
                             <ContentPresenter
                                 VerticalAlignment="{TemplateBinding ContentVerticalAlignment}"
                                 HorizontalAlignment="{TemplateBinding ContentHorizontalAlignment}"
