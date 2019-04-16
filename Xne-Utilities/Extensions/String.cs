@@ -43,85 +43,45 @@ namespace Xne_Utilities
         /// <summary>
         /// Tries to parse this string to a bool, returning a fallback value if it fails
         /// </summary>
-        public static bool TryBoolParse(this string value, bool fallbackValue = false)
-        {
-            bool result;
-            return bool.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static bool TryBoolParse(this string value, bool fallbackValue = false) => bool.TryParse(value, out bool result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse this string to a byte, returning a fallback value if it fails
         /// </summary>
-        public static byte TryByteParse(this string value, byte fallbackValue = 0)
-        {
-            byte result;
-            return byte.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static byte TryByteParse(this string value, byte fallbackValue = 0) => byte.TryParse(value, out byte result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse this string to a short, returning a fallback value if it fails
         /// </summary>
-        public static short TryShortParse(this string value, short fallbackValue = -1)
-        {
-            short result;
-            return short.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static short TryShortParse(this string value, short fallbackValue = -1) => short.TryParse(value, out short result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse this string to a int, returning a fallback value if it fails
         /// </summary>
-        public static int TryIntParse(this string value, int fallbackValue = -1)
-        {
-            int result;
-            return int.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static int TryIntParse(this string value, int fallbackValue = -1) => int.TryParse(value, out int result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse this string to a float, returning a fallback value if it fails
         /// </summary>
-        public static float TryFloatParse(this string value, float fallbackValue = -1)
-        {
-            float result;
-            return float.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static float TryFloatParse(this string value, float fallbackValue = -1) => float.TryParse(value, out float result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse this string to a double, returning a fallback value if it fails
         /// </summary>
-        public static double TryDoubleParse(this string value, double fallbackValue = -1)
-        {
-            double result;
-            return double.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static double TryDoubleParse(this string value, double fallbackValue = -1) => double.TryParse(value, out double result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse this string to a decimal, returning a fallback value if it fails
         /// </summary>
-        public static decimal TryDecimalParse(this string value, decimal fallbackValue = -1)
-        {
-            decimal result;
-            return decimal.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static decimal TryDecimalParse(this string value, decimal fallbackValue = -1) => decimal.TryParse(value, out decimal result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse this string to a long, returning a fallback value if it fails
         /// </summary>
-        public static long TryLongParse(this string value, long fallbackValue = -1)
-        {
-            long result;
-            return long.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static long TryLongParse(this string value, long fallbackValue = -1) => long.TryParse(value, out long result) ? result : fallbackValue;
         /// <summary>
         /// Tries to parse a string to a DateTime, returning a fallback value if it fails
         /// </summary>
-        public static DateTime TryDateTimeParse(this string value, DateTime optionalDateTime = default)
-        {
-            DateTime result;
-            return DateTime.TryParse(value, out result) ? result : optionalDateTime;
-        }
+        public static DateTime TryDateTimeParse(this string value, DateTime optionalDateTime = default) => DateTime.TryParse(value, out DateTime result) ? result : optionalDateTime;
         /// <summary>
         /// Tries to parse this string to a TEnum, returning a fallback value if it fails
         /// </summary>
         /// <typeparam name="TEnum">The typeof enumeration to parse to</typeparam>
         /// <param name="fallbackValue">A fallback value if the parse fails. This will be the first value listed within the actual enumeration type</param>
-        public static TEnum TryEnumParse<TEnum>(this string value, TEnum fallbackValue = default(TEnum)) where TEnum : struct
-        {
-            TEnum result;
-            return Enum.TryParse(value, out result) ? result : fallbackValue;
-        }
+        public static TEnum TryEnumParse<TEnum>(this string value, TEnum fallbackValue = default) where TEnum : struct => Enum.TryParse(value, out TEnum result) ? result : fallbackValue;
         /// <summary>
         /// Deserializes a JSON string into an object of a specified T type.
         /// NOTE: Make sure the object class you're deserializing to has a default, parameterless constructor.

@@ -3,3 +3,4 @@ Y:\Github\Ruko\Xne-Utilities\bin\Debug\Xne-Utilities.pdb
 Y:\Github\Ruko\Xne-Utilities\obj\Debug\Xne-Utilities.csproj.CoreCompileInputs.cache
 Y:\Github\Ruko\Xne-Utilities\obj\Debug\Xne-Utilities.dll
 Y:\Github\Ruko\Xne-Utilities\obj\Debug\Xne-Utilities.pdb
+Y:\Github\Ruko\Xne-Utilities\obj\Debug\Xne-Utilities.csprojAssemblyReference.cache
