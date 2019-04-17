@@ -23,6 +23,7 @@ namespace Ruko
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new RukoViewModel(this);
         }
     }
 }

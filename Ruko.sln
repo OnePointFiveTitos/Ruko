@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xne-Resources", "Xne-Resour
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xne-Controls", "Xne-Controls\Xne-Controls.csproj", "{DDA60967-1CBA-4447-B47C-AB8BB424AFEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xne-Login", "Xne-Login\Xne-Login.csproj", "{BA17B2E8-4D31-4288-B62C-04BABF5955B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xne-MVVM", "Xne-MVVM\Xne-MVVM.csproj", "{2BB599FC-90D7-412F-A09F-44AC95643AD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{DDA60967-1CBA-4447-B47C-AB8BB424AFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA60967-1CBA-4447-B47C-AB8BB424AFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA60967-1CBA-4447-B47C-AB8BB424AFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA17B2E8-4D31-4288-B62C-04BABF5955B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA17B2E8-4D31-4288-B62C-04BABF5955B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA17B2E8-4D31-4288-B62C-04BABF5955B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA17B2E8-4D31-4288-B62C-04BABF5955B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB599FC-90D7-412F-A09F-44AC95643AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB599FC-90D7-412F-A09F-44AC95643AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB599FC-90D7-412F-A09F-44AC95643AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB599FC-90D7-412F-A09F-44AC95643AD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\Object.cs" />
+    <Compile Include="InitializerBase.cs" />
+    <Compile Include="Interfaces\IInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extensions\String.cs" />
     <Compile Include="Extensions\Stringbuilder.cs" />

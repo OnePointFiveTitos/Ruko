@@ -1,0 +1,11 @@
+Y:\Github\Ruko\Xne-MVVM\bin\Debug\Xne-MVVM.dll
+Y:\Github\Ruko\Xne-MVVM\bin\Debug\Xne-MVVM.pdb
+Y:\Github\Ruko\Xne-MVVM\bin\Debug\Xne-Utilities.dll
+Y:\Github\Ruko\Xne-MVVM\bin\Debug\Xne-Utilities.pdb
+Y:\Github\Ruko\Xne-MVVM\obj\Debug\Xne-MVVM.csprojAssemblyReference.cache
+Y:\Github\Ruko\Xne-MVVM\obj\Debug\Xne_MVVM.Properties.Resources.resources
+Y:\Github\Ruko\Xne-MVVM\obj\Debug\Xne-MVVM.csproj.GenerateResource.cache
+Y:\Github\Ruko\Xne-MVVM\obj\Debug\Xne-MVVM.csproj.CoreCompileInputs.cache
+Y:\Github\Ruko\Xne-MVVM\obj\Debug\Xne-MVVM.csproj.CopyComplete
+Y:\Github\Ruko\Xne-MVVM\obj\Debug\Xne-MVVM.dll
+Y:\Github\Ruko\Xne-MVVM\obj\Debug\Xne-MVVM.pdb

@@ -5,30 +5,5 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ruko"
         xmlns:xc="clr-namespace:Xne_Controls;assembly=Xne-Controls">
-    <Grid>
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <xc:LabeledText
-            TextBoxVisibility="Visible"
-            Background="#eee"
-            Label="Name: "
-            Text="NameValue"/>-->
-        <!--<xc:CustomLabeledContent
-            InnerSpacing="5">
-            <xc:CustomLabeledContent.Label>
-                Label: 
-            </xc:CustomLabeledContent.Label>
-            <xc:CustomLabeledContent.Content>
-                NameValue
-            </xc:CustomLabeledContent.Content>
-        </xc:CustomLabeledContent>-->
-    </Grid>
+    <local:RukoView x:Name="RukoView"/>
 </Window>

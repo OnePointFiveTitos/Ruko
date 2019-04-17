@@ -38,5 +38,7 @@ namespace Xne_Utilities
         /// </summary>
         public static IEnumerable<T> ReturnAllThatAreNotNull<T>(this IEnumerable<T> values, T fallbackValue) => values.Select(value => value != null ? value : fallbackValue);
         public static T ReturnRandomElement<T>(this T[] values) => values[Random.Next(values.Length - 1)];
+        public static T Initialize<T>(this T value, Func<T, T> initializer) => initializer(value);
+        //public static T At<T>(this IEnumerable<T> values, int index) => values.ElementAt(index);
     }
 }
