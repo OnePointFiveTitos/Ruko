@@ -70,18 +70,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Customer\Contact\Address.cs" />
+    <Compile Include="Customer\Account\Account.cs" />
+    <Compile Include="ContactProfile.cs" />
+    <Compile Include="Customer\Contact\ContactInfoTypes.cs" />
+    <Compile Include="Customer\Contact\Classes\Contact.cs" />
+    <Compile Include="Customer\Contact\Classes\Address.cs" />
     <Compile Include="CustomerDataGrid.xaml.cs">
       <DependentUpon>CustomerDataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Customer\Contact\Interfaces\IAddress.cs" />
+    <Compile Include="Customer\Oil\Oil.cs" />
+    <Compile Include="OilTicket.cs" />
+    <Compile Include="Regexes.cs" />
     <Compile Include="Customer\Customer.cs" />
-    <Compile Include="Customer\Contact\Email.cs" />
-    <Compile Include="Customer\Contact\Name.cs" />
-    <Compile Include="Phone.cs" />
+    <Compile Include="Customer\Contact\Classes\Email.cs" />
+    <Compile Include="Customer\Contact\Classes\Name.cs" />
+    <Compile Include="Customer\Contact\Classes\Phone.cs" />
     <Compile Include="Ruko.cs" />
     <Compile Include="RukoView.xaml.cs">
       <DependentUpon>RukoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Customer\Service\Service.cs" />
+    <Compile Include="HeatingSystem.cs" />
+    <Compile Include="ServiceTicket.cs" />
     <Page Include="CustomerDataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -163,5 +174,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

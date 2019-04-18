@@ -40,5 +40,6 @@ namespace Xne_Utilities
         public static T ReturnRandomElement<T>(this T[] values) => values[Random.Next(values.Length - 1)];
         public static T Initialize<T>(this T value, Func<T, T> initializer) => initializer(value);
         //public static T At<T>(this IEnumerable<T> values, int index) => values.ElementAt(index);
+        public static void SetIfNotEqual<T>(this T value, T newValue) => value = value.Equals(newValue) ? value : newValue;
     }
 }

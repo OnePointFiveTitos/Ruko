@@ -28,3 +28,5 @@ Y:\Github\Ruko\Ruko\obj\Debug\Ruko.csproj.CoreCompileInputs.cache
 Y:\Github\Ruko\Ruko\obj\Debug\Ruko.csproj.CopyComplete
 Y:\Github\Ruko\Ruko\obj\Debug\Ruko.exe
 Y:\Github\Ruko\Ruko\obj\Debug\Ruko.pdb
+Y:\Github\Ruko\Ruko\obj\Debug\CustomerDataGrid.g.cs
+Y:\Github\Ruko\Ruko\obj\Debug\CustomerDataGrid.baml
