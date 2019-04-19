@@ -44,8 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\EditableBase.cs" />
     <Compile Include="Extensions\Object.cs" />
-    <Compile Include="InitializerBase.cs" />
+    <Compile Include="Interfaces\IEditable.cs" />
+    <Compile Include="Abstracts\InitializerBase.cs" />
     <Compile Include="Interfaces\IInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extensions\String.cs" />

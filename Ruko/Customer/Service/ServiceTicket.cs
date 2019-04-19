@@ -23,6 +23,7 @@ namespace Ruko
         internal float tax;
         internal float total;
         internal string payementType;
+
         internal bool isAnnualMaintenanceAndSafetyDiagnostic;
         internal bool isScheduled;
         internal string serviceType;

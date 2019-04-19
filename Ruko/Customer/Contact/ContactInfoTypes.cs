@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ruko
 {
-    public enum ContactInfoTypes
+    public enum ContactTypes
     {
         Name,
         Address,

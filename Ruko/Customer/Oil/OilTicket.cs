@@ -27,6 +27,7 @@ namespace Ruko
         internal float tax;
         internal float total;
         internal string payementType;
+
         internal float gallons;
         internal float pricePerGallon;
         internal float discount;

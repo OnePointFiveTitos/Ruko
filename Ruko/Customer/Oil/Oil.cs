@@ -7,14 +7,14 @@ using Xne_MVVM;
 
 namespace Ruko
 {
-    public class Oil : NodeViewModel<Customer, OilModel>
+    public class Oil : SectionBase<OilModel>
     {
         public Oil(Customer parent, OilModel model) : base(parent, model)
         {
         }
     }
 
-    public class OilModel
+    public class OilModel : SectionBaseModel
     {
 
     }

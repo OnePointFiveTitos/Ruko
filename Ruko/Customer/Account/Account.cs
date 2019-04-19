@@ -7,14 +7,14 @@ using Xne_MVVM;
 
 namespace Ruko
 {
-    public class Account : NodeViewModel<Customer, AccountModel>
+    public class Account : SectionBase<AccountModel>
     {
         public Account(Customer parent, AccountModel model) : base(parent, model)
         {
         }
     }
 
-    public class AccountModel
+    public class AccountModel : SectionBaseModel
     {
         internal string id;
         internal string status;
