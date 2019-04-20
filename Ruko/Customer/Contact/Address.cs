@@ -84,5 +84,14 @@ namespace Ruko
         internal int zipcode;
         internal int? extension;
         internal string crossStreet;
+
+        public AddressModel(string street, string city, int zipcode, int? extension, string crossStreet)
+        {
+            this.street = street;
+            this.city = city;
+            this.zipcode = zipcode;
+            this.extension = extension;
+            this.crossStreet = crossStreet;
+        }
     }
 }

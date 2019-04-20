@@ -94,5 +94,13 @@ namespace Ruko
         internal int line;
         internal int? countryCode;
         internal int? extension;
+        public PhoneModel(int areacode, int prefix, int line, int? countryCode, int? extension)
+        {
+            this.areacode = areacode;
+            this.prefix = prefix;
+            this.line = line;
+            this.countryCode = countryCode;
+            this.extension = extension;
+        }
     }
 }

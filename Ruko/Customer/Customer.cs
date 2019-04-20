@@ -14,8 +14,9 @@ namespace Ruko
         public Contact Contact => Model.contact;
         public Oil Oil => Model.oil;
         public Service Service => Model.service;
-        public Customer(RukoViewModel parent, CustomerModel model) : base(parent, model)
+        public Customer(RukoViewModel parent, CustomerModel model = null) : base(parent, model)
         {
+
         }
     }
 

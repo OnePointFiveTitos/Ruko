@@ -68,5 +68,11 @@ namespace Ruko
         internal string handle;
         internal string domain;
         internal string register;
+        public EmailModel(string handle, string domain, string register)
+        {
+            this.handle = handle;
+            this.domain = domain;
+            this.register = register;
+        }
     }
 }

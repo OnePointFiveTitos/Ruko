@@ -68,5 +68,12 @@ namespace Ruko
         internal string first;
         internal string middle;
         internal string last;
+
+        public NameModel(string first, string middle, string last)
+        {
+            this.first = first;
+            this.middle = middle;
+            this.last = last;
+        }
     }
 }
