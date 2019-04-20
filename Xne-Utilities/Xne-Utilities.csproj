@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Abstracts\EditableBase.cs" />
     <Compile Include="Extensions\Object.cs" />
+    <Compile Include="Extensions\General.cs" />
     <Compile Include="Interfaces\IEditable.cs" />
     <Compile Include="Abstracts\InitializerBase.cs" />
     <Compile Include="Interfaces\IInitializer.cs" />

@@ -21,7 +21,7 @@ namespace Ruko
         public ICommand ExitCommand => Commands["Exit"];
         #endregion
 
-        public ObservableCollection<Customer> Customers { get; } = new ObservableCollection<Customer>();
+        public ObservableCollection<Customer> Customers => Model.customers;
         public Customer SelectedCustomer
         {
             get => Model.selectedCustomer;
@@ -90,5 +90,11 @@ namespace Ruko
     public class RukoModel
     {
         internal Customer selectedCustomer;
+        internal ObservableCollection<Customer> customers;
+
+        public RukoModel(IEnumerable<Customer> customers = null)
+        {
+            this.customers = new ObservableCollection<Customer>().Conditionialize(customers);
+        }
     }
 }

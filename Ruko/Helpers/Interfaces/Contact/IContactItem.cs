@@ -12,6 +12,7 @@ namespace Ruko
         string Input { get; set; }
         bool IsPrimary { get; set; }
         event EventHandler<Match> Validated;
+
         void Validate();
         void OnValidated(IEnumerable<string> values);
         void SetAsPrimary();

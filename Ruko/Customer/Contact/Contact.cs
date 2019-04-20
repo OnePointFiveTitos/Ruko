@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Xne_Utilities;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace Ruko
                 }
             }
         }
-        public ObservableCollection<ContactProfile> Associated { get; } = new ObservableCollection<ContactProfile>();
+        public ObservableCollection<ContactProfile> Associated => Model.associated;
 
         public Contact(Customer parent, ContactModel model) : base(parent, model)
         {
@@ -34,5 +35,12 @@ namespace Ruko
     public class ContactModel : SectionBaseModel
     {
         internal ContactProfile primary;
+        internal ObservableCollection<ContactProfile> associated;
+        public ContactModel(ContactProfile primary, IEnumerable<ContactProfile> associated = null)
+        {
+            this.primary = primary;
+            //this.associated = associated == null ? new ObservableCollection<ContactProfile>() : new ObservableCollection<ContactProfile>(associated);
+            this.associated = new ObservableCollection<ContactProfile>().Conditionialize(associated);
+        }
     }
 }

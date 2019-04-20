@@ -70,6 +70,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Customer\Account\FinancialInfo.cs" />
+    <Compile Include="Customer\Account\GeneralInfo.cs" />
     <Compile Include="Helpers\Abstracts\AccountItem.cs" />
     <Compile Include="Helpers\Abstracts\ContactItem.cs" />
     <Compile Include="Customer\Account\Account.cs" />
@@ -94,6 +96,7 @@
     <Compile Include="Helpers\Interfaces\ISectionItem.cs" />
     <Compile Include="Helpers\Interfaces\Service\IServiceItem.cs" />
     <Compile Include="Helpers\Abstracts\OilItem.cs" />
+    <Compile Include="Helpers\Interfaces\ITicket.cs" />
     <Compile Include="Regexes.cs" />
     <Compile Include="Customer\Customer.cs" />
     <Compile Include="Customer\Contact\Email.cs" />
@@ -110,6 +113,7 @@
     <Compile Include="Helpers\Abstracts\SectionBase.cs" />
     <Compile Include="Helpers\Abstracts\SectionItemBase.cs" />
     <Compile Include="Helpers\Abstracts\ServiceItem.cs" />
+    <Compile Include="Helpers\Abstracts\TicketBase.cs" />
     <Page Include="GUI\CustomerDataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

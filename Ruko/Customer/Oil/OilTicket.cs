@@ -7,27 +7,160 @@ using Xne_MVVM;
 
 namespace Ruko
 {
-    public class OilTicket : NodeViewModel<Oil, OilTicketModel>
+    public class OilTicket : TicketBase<Oil, OilTicketModel>
     {
+        public float Gallons
+        {
+            get => Model.gallons;
+            set
+            {
+                if (Model.gallons != value)
+                {
+                    Model.gallons = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public float PricePerGallon
+        {
+            get => Model.pricePerGallon;
+            set
+            {
+                if (Model.pricePerGallon != value)
+                {
+                    Model.pricePerGallon = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public float Discount
+        {
+            get => Model.discount;
+            set
+            {
+                if (Model.discount != value)
+                {
+                    Model.discount = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public float DeliveryCharge
+        {
+            get => Model.deliveryCharge;
+            set
+            {
+                if (Model.deliveryCharge != value)
+                {
+                    Model.deliveryCharge = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string WorkType
+        {
+            get => Model.workType;
+            set
+            {
+                if (Model.workType != value)
+                {
+                    Model.workType = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public bool IsTaxable
+        {
+            get => Model.isTaxable;
+            set
+            {
+                if (Model.isTaxable != value)
+                {
+                    Model.isTaxable = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string TaxID
+        {
+            get => Model.taxID;
+            set
+            {
+                if (Model.taxID != value)
+                {
+                    Model.taxID = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string TaxRate
+        {
+            get => Model.taxRate;
+            set
+            {
+                if (Model.taxRate != value)
+                {
+                    Model.taxRate = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public bool IsTankFilled
+        {
+            get => Model.isTankFilled;
+            set
+            {
+                if (Model.isTankFilled != value)
+                {
+                    Model.isTankFilled = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public int InvoiceNumber
+        {
+            get => Model.invoiceNumber;
+            set
+            {
+                if (Model.invoiceNumber != value)
+                {
+                    Model.invoiceNumber = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public bool SendCopy
+        {
+            get => Model.sendCopy;
+            set
+            {
+                if (Model.sendCopy != value)
+                {
+                    Model.sendCopy = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string Reference
+        {
+            get => Model.reference;
+            set
+            {
+                if (Model.reference != value)
+                {
+                    Model.reference = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public OilTicket(Oil parent, OilTicketModel model) : base(parent, model)
         {
         }
     }
 
-    public class OilTicketModel
+    public class OilTicketModel : TicketBaseModel
     {
-        internal DateTime date;
-        internal Name name;
-        internal Address address;
-        internal string timeIn;
-        internal string timeOut;
-        internal string technician;
-        internal string remarks;
-        internal float subTotal;
-        internal float tax;
-        internal float total;
-        internal string payementType;
-
         internal float gallons;
         internal float pricePerGallon;
         internal float discount;

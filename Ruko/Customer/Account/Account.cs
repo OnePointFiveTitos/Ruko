@@ -9,6 +9,9 @@ namespace Ruko
 {
     public class Account : SectionBase<AccountModel>
     {
+        public GeneralInfo GeneralInfo => Model.generalInfo;
+        public FinancialInfo FinancialInfo => Model.financialInfo;
+
         public Account(Customer parent, AccountModel model) : base(parent, model)
         {
         }
@@ -16,9 +19,13 @@ namespace Ruko
 
     public class AccountModel : SectionBaseModel
     {
-        internal string id;
-        internal string status;
-        internal string standing;
-        internal string lead;
+        internal GeneralInfo generalInfo;
+        internal FinancialInfo financialInfo;
+
+        public AccountModel(GeneralInfo generalInfo, FinancialInfo financialInfo)
+        {
+            this.generalInfo = generalInfo;
+            this.financialInfo = financialInfo;
+        }
     }
 }

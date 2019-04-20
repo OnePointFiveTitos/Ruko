@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xne_MVVM;
+using Xne_Utilities;
 
 namespace Ruko
 {
@@ -100,17 +101,30 @@ namespace Ruko
     public class ContactProfileModel
     {
         internal bool isPrimary;
+
         internal Name name;
         internal Address address;
         internal Email email;
         internal Phone phone;
 
-        public ContactProfileModel(Name name, Address address = null, Email email = null, Phone phone = null)
+        internal ObservableCollection<Address> addresses;
+        internal ObservableCollection<Email> emails;
+        internal ObservableCollection<Phone> phones;
+
+        public ContactProfileModel(Name name, Address address, Email email, Phone phone, IEnumerable<Address> addresses = null, IEnumerable<Email> emails = null, IEnumerable<Phone> phones = null)
         {
             this.name = name;
             this.address = address;
             this.email = email;
             this.phone = phone;
+
+            //this.addresses = addresses == null ? new ObservableCollection<Address>() : new ObservableCollection<Address>(addresses);
+            //this.emails = emails == null ? new ObservableCollection<Email>() : new ObservableCollection<Email>(emails);
+            //this.phones = phones == null ? new ObservableCollection<Phone>() : new ObservableCollection<Phone>(phones);
+
+            this.addresses = new ObservableCollection<Address>().Conditionialize(addresses);
+            this.emails = new ObservableCollection<Email>().Conditionialize(emails);
+            this.phones = new ObservableCollection<Phone>().Conditionialize(phones);
         }
     }
 }

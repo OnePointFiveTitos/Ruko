@@ -6,28 +6,79 @@ using System.Threading.Tasks;
 
 namespace Ruko
 {
-    public class ServiceTicket
+    public class ServiceTicket : TicketBase<Service, ServiceTicketModel>
     {
+        public bool IsAnnualMaintenanceAndSafetyDiagnostic
+        {
+            get => Model.isAnnualMaintenanceAndSafetyDiagnostic;
+            set
+            {
+                if (Model.isAnnualMaintenanceAndSafetyDiagnostic != value)
+                {
+                    Model.isAnnualMaintenanceAndSafetyDiagnostic = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public bool IsScheduled
+        {
+            get => Model.isScheduled;
+            set
+            {
+                if (Model.isScheduled != value)
+                {
+                    Model.isScheduled = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string ServiceType
+        {
+            get => Model.serviceType;
+            set
+            {
+                if (Model.serviceType != value)
+                {
+                    Model.serviceType = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string InstallationType
+        {
+            get => Model.installationType;
+            set
+            {
+                if (Model.installationType != value)
+                {
+                    Model.installationType = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string CoolingAndHeatingType
+        {
+            get => Model.coolingAndHeatingType;
+            set
+            {
+                if (Model.coolingAndHeatingType != value)
+                {
+                    Model.coolingAndHeatingType = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public ServiceTicket(Service parent, ServiceTicketModel model) : base(parent, model)
+        {
+        }
     }
 
-    public class ServiceTicketModel
+    public class ServiceTicketModel : TicketBaseModel
     {
-        internal DateTime date;
-        internal Name name;
-        internal Address address;
-        internal string timeIn;
-        internal string timeOut;
-        internal string technician;
-        internal string remarks;
-        internal float subTotal;
-        internal float tax;
-        internal float total;
-        internal string payementType;
-
         internal bool isAnnualMaintenanceAndSafetyDiagnostic;
         internal bool isScheduled;
         internal string serviceType;
         internal string installationType;
-        internal string coolingHeatingType;
+        internal string coolingAndHeatingType;
     }
 }

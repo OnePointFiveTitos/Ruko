@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using Xne_MVVM;
+using System.Windows.Input;
 
 namespace Ruko
 {
-    public abstract class ContactItem<TModel> : SectionItemBase<ContactProfile, TModel>, IContactItem where TModel : ContactItemModel
+    public abstract class ContactItem<TModel> : SectionItemBase<ContactProfile, TModel>, IContactItem, ICommander where TModel : ContactItemModel
     {
         public abstract Regex ValidationExpression { get; }
         public virtual ContactTypes ContactType => GetType().Name.TryEnumParse<ContactTypes>();
@@ -37,6 +39,12 @@ namespace Ruko
                 }
             }
         }
+
+        #region Commands
+        public virtual Dictionary<string, ICommand> Commands { get; private set; }
+        public ICommand SetAsPrimaryCommand => Commands["SetAsPrimary"];
+        #endregion
+
         public event EventHandler<Match> Validated;
         public ContactItem(ContactProfile parent, TModel model) : base(parent, model)
         {
@@ -55,7 +63,9 @@ namespace Ruko
                 }
             }
         }
+
         public abstract void OnValidated(IEnumerable<string> values);
+
         public virtual void SetAsPrimary()
         {
             if (ContactType != ContactTypes.Name)
@@ -66,6 +76,14 @@ namespace Ruko
             {
                 Parent.Parent.Primary = Parent;
             }
+        }
+
+        public virtual void InitializeCommands()
+        {
+            Commands = new Dictionary<string, ICommand>
+            {
+                ["SetAsPrimary"] = new RelayCommand(SetAsPrimary),
+            };
         }
     }
     public abstract class ContactItemModel : SectionItemBaseModel
