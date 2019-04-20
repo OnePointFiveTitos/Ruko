@@ -1,6 +1,6 @@
 ﻿namespace Ruko
 {
-    public interface IPhoneItem : IContactItem, IContactMethod
+    public interface IPhoneItem : IContactItem
     {
         int Areacode { get; set; }
         int Prefix { get; set; }

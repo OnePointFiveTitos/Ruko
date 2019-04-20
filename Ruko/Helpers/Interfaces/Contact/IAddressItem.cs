@@ -1,6 +1,6 @@
 ﻿namespace Ruko
 {
-    public interface IAddressItem : IContactItem, IContactMethod
+    public interface IAddressItem : IContactItem
     {
         string Street { get; set; }
         string City { get; set; }

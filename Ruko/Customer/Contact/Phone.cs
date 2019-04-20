@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Xne_Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace Ruko
 {
     public class Phone : ContactItem<PhoneModel>, IPhoneItem
     {
+        public override Regex ValidationExpression => PhoneValidationExpression;
+
         public int Areacode
         {
             get => Model.areacode;
@@ -71,8 +74,16 @@ namespace Ruko
                 }
             }
         }
-        public Phone(Contact parent, PhoneModel model) : base(parent, model)
+        public Phone(ContactProfile parent, PhoneModel model) : base(parent, model)
         {
+
+        }
+
+        public override void OnValidated(IEnumerable<string> values)
+        {
+            Areacode = values.At(1).TryIntParse();
+            Prefix = values.At(2).TryIntParse();
+            Line = values.At(3).TryIntParse();
         }
     }
 

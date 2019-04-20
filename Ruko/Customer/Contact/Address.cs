@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Xne_MVVM;
 using static Ruko.Regexes;
 
@@ -6,6 +7,8 @@ namespace Ruko
 {
     public class Address : ContactItem<AddressModel>, IAddressItem
     {
+        public override Regex ValidationExpression => AddressValidationExpression;
+
         public string Street
         {
             get => Model.street;
@@ -66,9 +69,12 @@ namespace Ruko
                 }
             }
         }
-        public Address(Contact parent, AddressModel model) : base(parent, model)
+        public Address(ContactProfile parent, AddressModel model) : base(parent, model)
         {
+
         }
+
+        public override void OnValidated(IEnumerable<string> values) { /*Not used with addresses (right now) because I don't know how to accurately valid them since they can vary so much*/ }
     }
 
     public class AddressModel : ContactItemModel

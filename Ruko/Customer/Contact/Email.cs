@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Xne_Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace Ruko
 {
     public class Email : ContactItem<EmailModel>, IEmailItem
     {
+        public override Regex ValidationExpression => EmailValidationExpression;
+
         public string Handle
         {
             get => Model.handle;
@@ -47,8 +50,16 @@ namespace Ruko
                 }
             }
         }
-        public Email(Contact parent, EmailModel model) : base(parent, model)
+        public Email(ContactProfile parent, EmailModel model) : base(parent, model)
         {
+
+        }
+
+        public override void OnValidated(IEnumerable<string> values)
+        {
+            Handle = values.At(1);
+            Domain = values.At(2);
+            Register = values.At(3);
         }
     }
 

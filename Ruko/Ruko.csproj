@@ -83,7 +83,6 @@
     <Compile Include="Customer\Oil\Oil.cs" />
     <Compile Include="Customer\Oil\OilTicket.cs" />
     <Compile Include="Helpers\Interfaces\Contact\IAddressItem.cs" />
-    <Compile Include="Helpers\Interfaces\Contact\IContactMethod.cs" />
     <Compile Include="Helpers\Interfaces\Contact\IEmailItem.cs" />
     <Compile Include="Helpers\Interfaces\Contact\INameItem.cs" />
     <Compile Include="Helpers\Interfaces\Contact\IPhoneItem.cs" />

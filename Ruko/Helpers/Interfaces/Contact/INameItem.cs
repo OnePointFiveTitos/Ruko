@@ -1,6 +1,6 @@
 ﻿namespace Ruko
 {
-    public interface INameItem : IContactItem, IContactMethod
+    public interface INameItem : IContactItem
     {
         string First { get; set; }
         string Middle { get; set; }
