@@ -14,5 +14,6 @@ namespace Ruko
         event EventHandler<Match> Validated;
         void Validate();
         void OnValidated(IEnumerable<string> values);
+        void SetAsPrimary();
     }
 }

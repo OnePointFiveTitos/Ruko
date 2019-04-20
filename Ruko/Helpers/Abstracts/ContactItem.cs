@@ -56,6 +56,17 @@ namespace Ruko
             }
         }
         public abstract void OnValidated(IEnumerable<string> values);
+        public virtual void SetAsPrimary()
+        {
+            if (ContactType != ContactTypes.Name)
+            {
+                Parent.SetPrimary(this);
+            }
+            else
+            {
+                Parent.Parent.Primary = Parent;
+            }
+        }
     }
     public abstract class ContactItemModel : SectionItemBaseModel
     {

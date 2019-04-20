@@ -13,7 +13,7 @@ namespace Ruko
     public class Name : ContactItem<NameModel>, INameItem
     {
         public override Regex ValidationExpression => NameValidationExpression;
-
+        public override bool IsPrimary => Parent.IsPrimary;
         public string First
         {
             get => Model.first;

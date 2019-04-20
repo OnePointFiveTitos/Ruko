@@ -10,6 +10,19 @@ namespace Ruko
 {
     public class ContactProfile : NodeViewModel<Contact, ContactProfileModel>
     {
+        public bool IsPrimary
+        {
+            get => Model.isPrimary;
+            set
+            {
+                if (Model.isPrimary != value)
+                {
+                    Model.isPrimary = value;
+                    OnPropertyChanged();
+                    Name.IsPrimary = true;
+                }
+            }
+        }
         public Name Name => Model.name;
         public Address Address
         {
@@ -56,33 +69,37 @@ namespace Ruko
         {
         }
 
-        //public T GetPrimary<T>(IEnumerable<T> items) where T : IContactItem => items.FirstOrDefault(item => item.IsPrimary);
-        //public void SetPrimary<T>(T primary) where T : IContactItem
-        //{
-        //    switch (primary.ContactType)
-        //    {
-        //        case ContactTypes.Name:
-        //            break;
-        //        case ContactTypes.Address:
-        //            break;
-        //        case ContactTypes.Email:
-        //            break;
-        //        case ContactTypes.Phone:
-        //            break;
-        //        default:
-        //            throw new ArgumentException("Wrong ContactType type");
-        //    }
-        //}
+        public void SetPrimary<T>(T newValue) where T : IContactItem
+        {
+            IEnumerable<IContactItem> items = null;
+            IContactItem currentValue;
+            switch (newValue.ContactType)
+            {
+                case ContactTypes.Address:
+                    items = Addresses;
+                    currentValue = Address;
+                    break;
+                case ContactTypes.Email:
+                    items = Emails;
+                    currentValue = Email;
+                    break;
+                case ContactTypes.Phone:
+                    items = Phones;
+                    currentValue = Phone;
+                    break;
+                default:
+                    throw new ArgumentException("Wrong ContactType type");
+            }
 
-        //void SwapPrimary<T>(T currentPrimary, T newPrimary) where T : IContactItem
-        //{
-        //    currentPrimary.IsPrimary = false;
-        //    newPrimary.IsPrimary = true;
-        //}
+            currentValue = GetPrimary(items);
+        }
+
+        T GetPrimary<T>(IEnumerable<T> items) where T : IContactItem => items.FirstOrDefault(item => item.IsPrimary);
     }
 
     public class ContactProfileModel
     {
+        internal bool isPrimary;
         internal Name name;
         internal Address address;
         internal Email email;
